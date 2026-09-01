@@ -13,6 +13,8 @@ seasonal regularization, and separately examines signed land-cover effects.
 - Continuous Landsat slightly improves average curve shape but not magnitude.
 - Allowing signed class effects changes the allocation and slightly improves
   annual MAE, but does not materially improve overall held-out prediction.
+- Landsat-only models recover the broad seasonal shape but perform approximately
+  like the mean-curve baseline and trail the strongest land-cover model.
 
 Object values are latent model attributions, not directly observed irrigation.
 
@@ -31,8 +33,9 @@ three files in the Colab runtime, installs dependencies, and runs:
 1. `src.pipeline`
 2. `src.refinement`
 3. `src.signed_effects`
-4. `src.build_uncertainty_report`
-5. the test suite
+4. `src.landsat_only`
+5. `src.build_uncertainty_report`
+6. the test suite
 
 No archived predictions, parameters, crosswalks, or derived targets are used.
 
@@ -42,10 +45,10 @@ No archived predictions, parameters, crosswalks, or derived targets are used.
 - `tests/`: target, aggregation, coverage, spatial-output, and manifest tests.
 - `reports/water_use_uncertainty_report.html`: six-method uncertainty report.
 - `reports/signed_landcover_effects_report.html`: separate signed-effects report.
+- `reports/landsat_only_report.html`: four class-free Landsat-only experiments.
 - `outputs/`: compact audit, metrics, paired comparisons, and class-rate tables.
 - `inputs/README.md`: input schema and placement instructions; source data are
   intentionally excluded from Git.
 
 Water units are thousand gallons per month. Areas are measured in square metres
 in EPSG:32613; unit rates are reported per 100 square metres.
-
