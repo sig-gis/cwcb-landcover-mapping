@@ -1,0 +1,112 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20260901,
+    "unit": "paired parcels",
+    "estimand": "mean held-out monthly prediction curve"
+  },
+  "methods": [
+    {
+      "model_id": "mean_curve",
+      "label": "Training-mean curve",
+      "monthly_mae": 3.9989331436699858,
+      "monthly_rmse": 7.5223310112105946,
+      "cosine": 0.918679696765571,
+      "annual_mae": 38.830725462304414,
+      "bootstrap_mae_p025": 3.1947486960644857,
+      "bootstrap_mae_p975": 4.988543148411568,
+      "aggregate_figure": "reports/figures/uncertainty/mean_curve.png",
+      "held_out_parcel_figure": "reports/figures/uncertainty/mean_curve_held_out_parcels.png",
+      "held_out_parcel_fids": [
+        5,
+        3,
+        13
+      ]
+    },
+    {
+      "model_id": "class_area_nnls",
+      "label": "Nonnegative class-area model",
+      "monthly_mae": 3.7141530082226715,
+      "monthly_rmse": 7.3701110733462825,
+      "cosine": 0.9138557036505248,
+      "annual_mae": 34.952693685415255,
+      "bootstrap_mae_p025": 2.859339426212261,
+      "bootstrap_mae_p975": 4.778624001746953,
+      "aggregate_figure": "reports/figures/uncertainty/class_area_nnls.png",
+      "held_out_parcel_figure": "reports/figures/uncertainty/class_area_nnls_held_out_parcels.png",
+      "held_out_parcel_fids": [
+        5,
+        3,
+        13
+      ]
+    },
+    {
+      "model_id": "proportion_multioutput_rf",
+      "label": "Proportional multi-output random forest",
+      "monthly_mae": 4.04155209034039,
+      "monthly_rmse": 7.432447160651563,
+      "cosine": 0.9202073805654742,
+      "annual_mae": 39.31902878272521,
+      "bootstrap_mae_p025": 3.2675517921845105,
+      "bootstrap_mae_p975": 4.991001337878653,
+      "aggregate_figure": "reports/figures/uncertainty/proportion_multioutput_rf.png",
+      "held_out_parcel_figure": "reports/figures/uncertainty/proportion_multioutput_rf_held_out_parcels.png",
+      "held_out_parcel_fids": [
+        5,
+        3,
+        13
+      ]
+    },
+    {
+      "model_id": "landsat_class_month_nnls",
+      "label": "Continuous Landsat-conditioned class model",
+      "monthly_mae": 3.8305305289315883,
+      "monthly_rmse": 7.411756800653804,
+      "cosine": 0.9224256437243475,
+      "annual_mae": 36.48647626370343,
+      "bootstrap_mae_p025": 2.992496863059906,
+      "bootstrap_mae_p975": 4.891865356797122,
+      "aggregate_figure": "reports/figures/uncertainty/landsat_class_month_nnls.png",
+      "held_out_parcel_figure": "reports/figures/uncertainty/landsat_class_month_nnls_held_out_parcels.png",
+      "held_out_parcel_fids": [
+        5,
+        3,
+        13
+      ]
+    },
+    {
+      "model_id": "annual_class_area_common_shape",
+      "label": "Annual class-area magnitude with common shape",
+      "monthly_mae": 3.7294980772724533,
+      "monthly_rmse": 7.360206623787681,
+      "cosine": 0.918679696765571,
+      "annual_mae": 34.792083865024075,
+      "bootstrap_mae_p025": 2.863909984115228,
+      "bootstrap_mae_p975": 4.8455286105019475,
+      "aggregate_figure": "reports/figures/uncertainty/annual_class_area_common_shape.png",
+      "held_out_parcel_figure": "reports/figures/uncertainty/annual_class_area_common_shape_held_out_parcels.png",
+      "held_out_parcel_fids": [
+        5,
+        3,
+        13
+      ]
+    },
+    {
+      "model_id": "seasonally_regularized_class_area",
+      "label": "Seasonally regularized class-area model",
+      "monthly_mae": 3.6672223979095064,
+      "monthly_rmse": 7.341695133228107,
+      "cosine": 0.9201852725352168,
+      "annual_mae": 34.73271043858715,
+      "bootstrap_mae_p025": 2.8239857632300747,
+      "bootstrap_mae_p975": 4.77736168293472,
+      "aggregate_figure": "reports/figures/uncertainty/seasonally_regularized_class_area.png",
+      "held_out_parcel_figure": "reports/figures/uncertainty/seasonally_regularized_class_area_held_out_parcels.png",
+      "held_out_parcel_fids": [
+        5,
+        3,
+        13
+      ]
+    }
+  ]
+}

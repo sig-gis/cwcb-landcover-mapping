@@ -1,0 +1,163 @@
+{
+  "motivation": {
+    "observed_failure": "simple class model improved magnitude but not cosine shape; class curves are weakly identified",
+    "focused_models": [
+      "annual class-area magnitude with common training-only shape",
+      "joint seasonally smoothed and partially pooled nonnegative class-area curves"
+    ]
+  },
+  "metrics": [
+    {
+      "model_id": "mean_curve",
+      "monthly_mae_kgal": 3.9989331436699858,
+      "monthly_rmse_kgal": 7.5223310112105946,
+      "mean_cosine_similarity": 0.918679696765571,
+      "median_cosine_similarity": 0.9555762379351138,
+      "annual_mae_kgal": 38.830725462304414,
+      "annual_rmse_kgal": 51.66397017712743,
+      "annual_bias_kgal": 1.495879443705474e-15
+    },
+    {
+      "model_id": "class_area_nnls",
+      "monthly_mae_kgal": 3.7141530082226715,
+      "monthly_rmse_kgal": 7.3701110733462825,
+      "mean_cosine_similarity": 0.9138557036505248,
+      "median_cosine_similarity": 0.9569708538001882,
+      "annual_mae_kgal": 34.952693685415255,
+      "annual_rmse_kgal": 50.15189668828062,
+      "annual_bias_kgal": -2.5340020730335087
+    },
+    {
+      "model_id": "annual_class_area_common_shape",
+      "monthly_mae_kgal": 3.7294980772724533,
+      "monthly_rmse_kgal": 7.360206623787681,
+      "mean_cosine_similarity": 0.918679696765571,
+      "median_cosine_similarity": 0.955576237935114,
+      "annual_mae_kgal": 34.792083865024075,
+      "annual_rmse_kgal": 50.44135132466349,
+      "annual_bias_kgal": -3.356927343023223
+    },
+    {
+      "model_id": "seasonally_regularized_class_area",
+      "monthly_mae_kgal": 3.6672223979095064,
+      "monthly_rmse_kgal": 7.341695133228107,
+      "mean_cosine_similarity": 0.9201852725352168,
+      "median_cosine_similarity": 0.9572312546706166,
+      "annual_mae_kgal": 34.73271043858715,
+      "annual_rmse_kgal": 50.2508446727484,
+      "annual_bias_kgal": -3.5536242694346893
+    }
+  ],
+  "paired": [
+    {
+      "model_a": "mean_curve",
+      "model_b": "class_area_nnls",
+      "mean_parcel_monthly_mae_difference_a_minus_b": 0.28478013544731395,
+      "median_difference": 0.30804119036714717,
+      "bootstrap_p025": -0.04229705650406263,
+      "bootstrap_p975": 0.6225197693423593,
+      "parcels_a_better": 14,
+      "parcels_b_better": 24,
+      "ties": 0
+    },
+    {
+      "model_a": "mean_curve",
+      "model_b": "annual_class_area_common_shape",
+      "mean_parcel_monthly_mae_difference_a_minus_b": 0.2694350663975329,
+      "median_difference": 0.17347430171880696,
+      "bootstrap_p025": -0.03966675933895174,
+      "bootstrap_p975": 0.6101636174956345,
+      "parcels_a_better": 14,
+      "parcels_b_better": 24,
+      "ties": 0
+    },
+    {
+      "model_a": "mean_curve",
+      "model_b": "seasonally_regularized_class_area",
+      "mean_parcel_monthly_mae_difference_a_minus_b": 0.33171074576047943,
+      "median_difference": 0.3637851657042934,
+      "bootstrap_p025": 0.054599380914975355,
+      "bootstrap_p975": 0.6466706900450321,
+      "parcels_a_better": 13,
+      "parcels_b_better": 25,
+      "ties": 0
+    },
+    {
+      "model_a": "class_area_nnls",
+      "model_b": "annual_class_area_common_shape",
+      "mean_parcel_monthly_mae_difference_a_minus_b": -0.015345069049781074,
+      "median_difference": -0.029193841411202293,
+      "bootstrap_p025": -0.13223123008773205,
+      "bootstrap_p975": 0.11450387842673931,
+      "parcels_a_better": 24,
+      "parcels_b_better": 14,
+      "ties": 0
+    },
+    {
+      "model_a": "class_area_nnls",
+      "model_b": "seasonally_regularized_class_area",
+      "mean_parcel_monthly_mae_difference_a_minus_b": 0.04693061031316543,
+      "median_difference": 0.05465733094071701,
+      "bootstrap_p025": -0.013144931026279979,
+      "bootstrap_p975": 0.1079989647798321,
+      "parcels_a_better": 13,
+      "parcels_b_better": 25,
+      "ties": 0
+    },
+    {
+      "model_a": "annual_class_area_common_shape",
+      "model_b": "seasonally_regularized_class_area",
+      "mean_parcel_monthly_mae_difference_a_minus_b": 0.06227567936294651,
+      "median_difference": 0.09964803086874174,
+      "bootstrap_p025": -0.04473974708208488,
+      "bootstrap_p975": 0.16204700085733606,
+      "parcels_a_better": 12,
+      "parcels_b_better": 26,
+      "ties": 0
+    }
+  ],
+  "settings": {
+    "annual_full_alpha": 10.0,
+    "annual_outer_alpha_counts": {
+      "10.0": 38
+    },
+    "seasonal_full_config": {
+      "ridge": 10.0,
+      "smooth": 10.0,
+      "pool": 0.0
+    },
+    "seasonal_outer_config_counts": {
+      "(10.0, 10.0, 1.0)": 3,
+      "(10.0, 10.0, 10.0)": 24,
+      "(10.0, 100.0, 0.0)": 6,
+      "(10.0, 10.0, 0.0)": 5
+    },
+    "seasonal_full_inner_scores": {
+      "(10.0, 1.0, 0.0)": 52.85125739117909,
+      "(10.0, 10.0, 0.0)": 52.684613449441045,
+      "(10.0, 100.0, 0.0)": 53.28007471630699,
+      "(10.0, 10.0, 0.1)": 52.68649049444813,
+      "(10.0, 10.0, 1.0)": 52.70789275107106,
+      "(10.0, 10.0, 10.0)": 52.93603357583082
+    }
+  },
+  "target": [
+    "cow_jan_21",
+    "cow_feb_21",
+    "cow_mar_21",
+    "cow_apr_21",
+    "cow_may_21",
+    "cow_jun_21",
+    "cow_jul_21",
+    "cow_aug_21",
+    "cow_sep_21",
+    "cow_oct_21",
+    "cow_nov_21",
+    "cow_dec_21"
+  ],
+  "units": "thousand gallons/month",
+  "aggregation": "both models predict object unit curves before exact area-weighted parcel aggregation",
+  "annual_shape_aggregation_max_abs_kgal": 1.9539925233402755e-14,
+  "seasonal_aggregation_max_abs_kgal": 1.7763568394002505e-14,
+  "decision": "seasonally regularized model is a useful challenger but its small paired gain is not statistically decisive"
+}

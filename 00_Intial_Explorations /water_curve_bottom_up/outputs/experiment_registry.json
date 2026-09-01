@@ -1,0 +1,52 @@
+{
+  "target": [
+    "cow_jan_21",
+    "cow_feb_21",
+    "cow_mar_21",
+    "cow_apr_21",
+    "cow_may_21",
+    "cow_jun_21",
+    "cow_jul_21",
+    "cow_aug_21",
+    "cow_sep_21",
+    "cow_oct_21",
+    "cow_nov_21",
+    "cow_dec_21"
+  ],
+  "units": "thousand gallons/month",
+  "area_unit": "100 square metres",
+  "validation": "LOPO, identical parcel folds",
+  "models": {
+    "mean_curve": {
+      "role": "baseline"
+    },
+    "class_area_nnls": {
+      "equation": "sum(fragment_area/100 * nonnegative class-month unit rate)",
+      "full_alpha": 10.0,
+      "outer_alpha_counts": {
+        "10.0": 38
+      }
+    },
+    "proportion_multioutput_rf": {
+      "equation": "one 700-tree multi-output RF on unrenormalized class proportions",
+      "object_level": false,
+      "role": "parcel benchmark/counterfactual only"
+    },
+    "landsat_class_month_nnls": {
+      "equation": "sum(fragment_area/100 * nonnegative[class intercept + class-specific scaled NDVI/NDMI/EVI for month])",
+      "full_alpha": 0.1,
+      "outer_alpha_counts": {
+        "0.1": 36,
+        "0.01": 1,
+        "10.0": 1
+      }
+    }
+  },
+  "finalists": [
+    "class_area_nnls"
+  ],
+  "aggregation_invariant": {
+    "class_area_nnls_max_abs_kgal": 2.842170943040401e-14,
+    "landsat_class_month_nnls_max_abs_kgal": 0.0
+  }
+}

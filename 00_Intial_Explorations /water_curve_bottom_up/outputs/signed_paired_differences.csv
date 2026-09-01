@@ -1,0 +1,7 @@
+model_a,model_b,mean_parcel_monthly_mae_difference_a_minus_b,median_difference,bootstrap_p025,bootstrap_p975,parcels_a_better,parcels_b_better,ties
+nonnegative_class_area,nonnegative_seasonally_regularized,0.04693061031316543,0.05465733094071701,-0.011921060756087764,0.10633935734189795,13,25,0
+nonnegative_class_area,signed_ridge_class_area,0.027456966469756407,0.0303431035745938,-0.07608979744249536,0.1405626971301476,16,22,0
+nonnegative_class_area,signed_seasonally_regularized_class_area,0.04954442993186599,0.058981757565325976,-0.05575405915704648,0.16339625457211435,16,22,0
+nonnegative_seasonally_regularized,signed_ridge_class_area,-0.019473643843409022,-0.046206611701132605,-0.12531421059004422,0.09179317073824256,21,17,0
+nonnegative_seasonally_regularized,signed_seasonally_regularized_class_area,0.002613819618700558,-0.003282787653725583,-0.09580334711520797,0.10377386358804501,19,19,0
+signed_ridge_class_area,signed_seasonally_regularized_class_area,0.02208746346210958,1.2878587085651816e-14,-0.052252309930415304,0.09206053419188773,15,22,1

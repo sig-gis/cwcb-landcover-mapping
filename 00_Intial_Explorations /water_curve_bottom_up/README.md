@@ -1,0 +1,51 @@
+# Bottom-up monthly water-use experiments
+
+This folder contains the clean-room 2021 parcel water-use analysis developed
+from three authoritative inputs. It estimates raw January–December metered use
+from land-cover object areas, compares continuous Landsat conditioning, tests
+seasonal regularization, and separately examines signed land-cover effects.
+
+## Main findings
+
+- The simple nonnegative class-area model modestly improves on a mean curve.
+- A seasonally regularized class-area model has the best point metrics, but its
+  paired improvement is small and not decisive with 38 parcels.
+- Continuous Landsat slightly improves average curve shape but not magnitude.
+- Allowing signed class effects changes the allocation and slightly improves
+  annual MAE, but does not materially improve overall held-out prediction.
+
+Object values are latent model attributions, not directly observed irrigation.
+
+## Reproduce in Colab
+
+Open `water_curve_bottom_up_colab.ipynb`. Set `DRIVE_INPUT_DIR` to the Google
+Drive folder containing these exact filenames:
+
+- `parcels_water_2021.gpkg`
+- `landcover_2021.gpkg`
+- `satellite_timeseries.sqlite`
+
+The notebook mounts Drive, clones this repository if necessary, stages those
+three files in the Colab runtime, installs dependencies, and runs:
+
+1. `src.pipeline`
+2. `src.refinement`
+3. `src.signed_effects`
+4. `src.build_uncertainty_report`
+5. the test suite
+
+No archived predictions, parameters, crosswalks, or derived targets are used.
+
+## Contents
+
+- `src/`: spatial joining, modeling, validation, uncertainty, and report code.
+- `tests/`: target, aggregation, coverage, spatial-output, and manifest tests.
+- `reports/water_use_uncertainty_report.html`: six-method uncertainty report.
+- `reports/signed_landcover_effects_report.html`: separate signed-effects report.
+- `outputs/`: compact audit, metrics, paired comparisons, and class-rate tables.
+- `inputs/README.md`: input schema and placement instructions; source data are
+  intentionally excluded from Git.
+
+Water units are thousand gallons per month. Areas are measured in square metres
+in EPSG:32613; unit rates are reported per 100 square metres.
+

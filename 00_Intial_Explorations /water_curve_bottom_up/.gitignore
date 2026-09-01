@@ -1,0 +1,10 @@
+inputs/*.gpkg
+inputs/*.sqlite
+cache/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+outputs/*.gpkg
+outputs/complete_objects_*.csv
+outputs/parcel_predictions*.csv
+

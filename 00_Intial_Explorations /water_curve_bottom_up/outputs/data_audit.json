@@ -1,0 +1,1663 @@
+{
+  "source_schemas": [
+    {
+      "file": "parcels_water_2021.gpkg",
+      "layer": "parcels",
+      "feature_count": 38,
+      "geometry_type": "Polygon",
+      "crs": "WGS 84",
+      "fields": [
+        {
+          "name": "OBJECTID",
+          "type": "Integer",
+          "missing": 0
+        },
+        {
+          "name": "PARUNIQ",
+          "type": "Integer",
+          "missing": 0
+        },
+        {
+          "name": "ATLASSHEET",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "ADDRNUM",
+          "type": "Integer",
+          "missing": 0
+        },
+        {
+          "name": "STREETDIR",
+          "type": "String",
+          "missing": 38
+        },
+        {
+          "name": "STREETNAME",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "STREETTYPE",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "UNITNUM",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "STREETCODE",
+          "type": "Integer",
+          "missing": 0
+        },
+        {
+          "name": "ALIASSTRCODE",
+          "type": "Integer",
+          "missing": 0
+        },
+        {
+          "name": "APN",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "LOT",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "BLOCK",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "SUBDIVISION",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "MULTIADDRESS",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "MULTIMETER",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "SHAREDMETER",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "CO",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "FACILITYNAME",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "CITYOWN",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "FULLTYPE",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "PARENTID",
+          "type": "Integer",
+          "missing": 38
+        },
+        {
+          "name": "HOA",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "COMPILATION",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "PARTID",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "COUNTYLINK",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "SHAPESTArea",
+          "type": "Real",
+          "missing": 0
+        },
+        {
+          "name": "SHAPESTLength",
+          "type": "Real",
+          "missing": 0
+        },
+        {
+          "name": "cow_match_address",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_match_method",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_account",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_customer",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_jan_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_feb_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_mar_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_apr_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_may_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_jun_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_jul_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_aug_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_sep_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_oct_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_nov_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_dec_21",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_total",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_indoor",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_outdoor",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "cow_bill_code",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_metercode",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_acct_type",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_str_type",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_sewer_basin",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_service_address",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_name",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_num_units",
+          "type": "Real",
+          "missing": 0
+        },
+        {
+          "name": "cow_cy_cle",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_book",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_orig_date",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_meter",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "cow_meter_pit_location",
+          "type": "String",
+          "missing": 0
+        }
+      ]
+    },
+    {
+      "file": "landcover_2021.gpkg",
+      "layer": "superpixels",
+      "feature_count": 13019,
+      "geometry_type": "Polygon",
+      "crs": "WGS 84 / Pseudo-Mercator",
+      "fields": [
+        {
+          "name": "sp_id",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "plot_id",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "sample_id",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "class_auto",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "class_final",
+          "type": "String",
+          "missing": 0
+        },
+        {
+          "name": "reviewed",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "conflict",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "purity",
+          "type": "Real",
+          "missing": 0
+        },
+        {
+          "name": "n_class",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "n_sam_cls",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "sam_cls",
+          "type": "String",
+          "missing": 166
+        },
+        {
+          "name": "sam_score",
+          "type": "Real",
+          "missing": 166
+        },
+        {
+          "name": "px",
+          "type": "Integer64",
+          "missing": 0
+        },
+        {
+          "name": "area",
+          "type": "Real",
+          "missing": 0
+        },
+        {
+          "name": "notes",
+          "type": "String",
+          "missing": 0
+        }
+      ]
+    }
+  ],
+  "satellite_tables": [
+    {
+      "table": "dynamic_world",
+      "rows": 387970,
+      "columns": [
+        {
+          "name": "bare",
+          "type": "REAL"
+        },
+        {
+          "name": "built",
+          "type": "REAL"
+        },
+        {
+          "name": "crops",
+          "type": "REAL"
+        },
+        {
+          "name": "flooded_vegetation",
+          "type": "REAL"
+        },
+        {
+          "name": "grass",
+          "type": "REAL"
+        },
+        {
+          "name": "label",
+          "type": "INTEGER"
+        },
+        {
+          "name": "shrub_and_scrub",
+          "type": "REAL"
+        },
+        {
+          "name": "snow_and_ice",
+          "type": "REAL"
+        },
+        {
+          "name": "trees",
+          "type": "REAL"
+        },
+        {
+          "name": "water",
+          "type": "REAL"
+        },
+        {
+          "name": "image_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "lon",
+          "type": "REAL"
+        },
+        {
+          "name": "lat",
+          "type": "REAL"
+        },
+        {
+          "name": "unique_loc_id",
+          "type": "INTEGER"
+        }
+      ],
+      "date_min": "2015-08-28",
+      "date_max": "2025-12-28",
+      "missing": {
+        "bare": 0,
+        "built": 0,
+        "crops": 0,
+        "flooded_vegetation": 0,
+        "grass": 0,
+        "label": 0,
+        "shrub_and_scrub": 0,
+        "snow_and_ice": 0,
+        "trees": 0,
+        "water": 0,
+        "image_id": 0,
+        "date": 0,
+        "lon": 0,
+        "lat": 0,
+        "unique_loc_id": 0
+      }
+    },
+    {
+      "table": "dynamic_world_unique_locs",
+      "rows": 642,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "lat",
+          "type": "FLOAT"
+        },
+        {
+          "name": "lon",
+          "type": "FLOAT"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "id": 0,
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "table": "landsat_5",
+      "rows": 49290,
+      "columns": [
+        {
+          "name": "QA_PIXEL",
+          "type": "INTEGER"
+        },
+        {
+          "name": "QA_RADSAT",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_ATMOS_OPACITY",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B1",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B2",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B4",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B5",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B7",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_CLOUD_QA",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_ATRAN",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_B6",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_CDIST",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_DRAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_EMIS",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_EMSD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_QA",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_TRAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_URAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "image_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "lon",
+          "type": "REAL"
+        },
+        {
+          "name": "lat",
+          "type": "REAL"
+        },
+        {
+          "name": "unique_loc_id",
+          "type": "INTEGER"
+        }
+      ],
+      "date_min": "1984-04-10",
+      "date_max": "2011-11-15",
+      "missing": {
+        "QA_PIXEL": 0,
+        "QA_RADSAT": 0,
+        "SR_ATMOS_OPACITY": 0,
+        "SR_B1": 0,
+        "SR_B2": 0,
+        "SR_B3": 0,
+        "SR_B4": 0,
+        "SR_B5": 0,
+        "SR_B7": 0,
+        "SR_CLOUD_QA": 0,
+        "ST_ATRAN": 0,
+        "ST_B6": 0,
+        "ST_CDIST": 0,
+        "ST_DRAD": 0,
+        "ST_EMIS": 0,
+        "ST_EMSD": 0,
+        "ST_QA": 0,
+        "ST_TRAD": 0,
+        "ST_URAD": 0,
+        "image_id": 0,
+        "date": 0,
+        "lon": 0,
+        "lat": 0,
+        "unique_loc_id": 0
+      }
+    },
+    {
+      "table": "landsat_5_unique_locs",
+      "rows": 150,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "lat",
+          "type": "FLOAT"
+        },
+        {
+          "name": "lon",
+          "type": "FLOAT"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "id": 0,
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "table": "landsat_7",
+      "rows": 45005,
+      "columns": [
+        {
+          "name": "QA_PIXEL",
+          "type": "INTEGER"
+        },
+        {
+          "name": "QA_RADSAT",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_ATMOS_OPACITY",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B1",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B2",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B4",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B5",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B7",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_CLOUD_QA",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_ATRAN",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_B6",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_CDIST",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_DRAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_EMIS",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_EMSD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_QA",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_TRAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_URAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "image_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "lon",
+          "type": "REAL"
+        },
+        {
+          "name": "lat",
+          "type": "REAL"
+        },
+        {
+          "name": "unique_loc_id",
+          "type": "INTEGER"
+        }
+      ],
+      "date_min": "1999-07-01",
+      "date_max": "2023-10-23",
+      "missing": {
+        "QA_PIXEL": 0,
+        "QA_RADSAT": 0,
+        "SR_ATMOS_OPACITY": 0,
+        "SR_B1": 0,
+        "SR_B2": 0,
+        "SR_B3": 0,
+        "SR_B4": 0,
+        "SR_B5": 0,
+        "SR_B7": 0,
+        "SR_CLOUD_QA": 0,
+        "ST_ATRAN": 0,
+        "ST_B6": 0,
+        "ST_CDIST": 0,
+        "ST_DRAD": 0,
+        "ST_EMIS": 0,
+        "ST_EMSD": 0,
+        "ST_QA": 0,
+        "ST_TRAD": 0,
+        "ST_URAD": 0,
+        "image_id": 0,
+        "date": 0,
+        "lon": 0,
+        "lat": 0,
+        "unique_loc_id": 0
+      }
+    },
+    {
+      "table": "landsat_7_unique_locs",
+      "rows": 150,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "lat",
+          "type": "FLOAT"
+        },
+        {
+          "name": "lon",
+          "type": "FLOAT"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "id": 0,
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "table": "landsat_8",
+      "rows": 124165,
+      "columns": [
+        {
+          "name": "QA_PIXEL",
+          "type": "INTEGER"
+        },
+        {
+          "name": "QA_RADSAT",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B1",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B2",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B4",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B5",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B6",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B7",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_QA_AEROSOL",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_ATRAN",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_B10",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_CDIST",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_DRAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_EMIS",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_EMSD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_QA",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_TRAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_URAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "image_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "lon",
+          "type": "REAL"
+        },
+        {
+          "name": "lat",
+          "type": "REAL"
+        },
+        {
+          "name": "unique_loc_id",
+          "type": "INTEGER"
+        }
+      ],
+      "date_min": "2013-03-18",
+      "date_max": "2025-12-23",
+      "missing": {
+        "QA_PIXEL": 0,
+        "QA_RADSAT": 0,
+        "SR_B1": 0,
+        "SR_B2": 0,
+        "SR_B3": 0,
+        "SR_B4": 0,
+        "SR_B5": 0,
+        "SR_B6": 0,
+        "SR_B7": 0,
+        "SR_QA_AEROSOL": 0,
+        "ST_ATRAN": 0,
+        "ST_B10": 0,
+        "ST_CDIST": 0,
+        "ST_DRAD": 0,
+        "ST_EMIS": 0,
+        "ST_EMSD": 0,
+        "ST_QA": 0,
+        "ST_TRAD": 0,
+        "ST_URAD": 0,
+        "image_id": 0,
+        "date": 0,
+        "lon": 0,
+        "lat": 0,
+        "unique_loc_id": 0
+      }
+    },
+    {
+      "table": "landsat_8_unique_locs",
+      "rows": 150,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "lat",
+          "type": "FLOAT"
+        },
+        {
+          "name": "lon",
+          "type": "FLOAT"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "id": 0,
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "table": "landsat_9",
+      "rows": 41243,
+      "columns": [
+        {
+          "name": "QA_PIXEL",
+          "type": "INTEGER"
+        },
+        {
+          "name": "QA_RADSAT",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B1",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B2",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B3",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B4",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B5",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B6",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_B7",
+          "type": "INTEGER"
+        },
+        {
+          "name": "SR_QA_AEROSOL",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_ATRAN",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_B10",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_CDIST",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_DRAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_EMIS",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_EMSD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_QA",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_TRAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ST_URAD",
+          "type": "INTEGER"
+        },
+        {
+          "name": "image_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "lon",
+          "type": "REAL"
+        },
+        {
+          "name": "lat",
+          "type": "REAL"
+        },
+        {
+          "name": "unique_loc_id",
+          "type": "INTEGER"
+        }
+      ],
+      "date_min": "2021-11-07",
+      "date_max": "2025-12-24",
+      "missing": {
+        "QA_PIXEL": 0,
+        "QA_RADSAT": 0,
+        "SR_B1": 0,
+        "SR_B2": 0,
+        "SR_B3": 0,
+        "SR_B4": 0,
+        "SR_B5": 0,
+        "SR_B6": 0,
+        "SR_B7": 0,
+        "SR_QA_AEROSOL": 0,
+        "ST_ATRAN": 0,
+        "ST_B10": 0,
+        "ST_CDIST": 0,
+        "ST_DRAD": 0,
+        "ST_EMIS": 0,
+        "ST_EMSD": 0,
+        "ST_QA": 0,
+        "ST_TRAD": 0,
+        "ST_URAD": 0,
+        "image_id": 0,
+        "date": 0,
+        "lon": 0,
+        "lat": 0,
+        "unique_loc_id": 0
+      }
+    },
+    {
+      "table": "landsat_9_unique_locs",
+      "rows": 150,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "lat",
+          "type": "FLOAT"
+        },
+        {
+          "name": "lon",
+          "type": "FLOAT"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "id": 0,
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "table": "terraclimate",
+      "rows": 17280,
+      "columns": [
+        {
+          "name": "aet",
+          "type": "INTEGER"
+        },
+        {
+          "name": "def",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pdsi",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pet",
+          "type": "INTEGER"
+        },
+        {
+          "name": "pr",
+          "type": "INTEGER"
+        },
+        {
+          "name": "ro",
+          "type": "INTEGER"
+        },
+        {
+          "name": "soil",
+          "type": "INTEGER"
+        },
+        {
+          "name": "srad",
+          "type": "INTEGER"
+        },
+        {
+          "name": "swe",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tmmn",
+          "type": "INTEGER"
+        },
+        {
+          "name": "tmmx",
+          "type": "INTEGER"
+        },
+        {
+          "name": "vap",
+          "type": "INTEGER"
+        },
+        {
+          "name": "vpd",
+          "type": "INTEGER"
+        },
+        {
+          "name": "vs",
+          "type": "INTEGER"
+        },
+        {
+          "name": "image_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "lon",
+          "type": "REAL"
+        },
+        {
+          "name": "lat",
+          "type": "REAL"
+        },
+        {
+          "name": "unique_loc_id",
+          "type": "INTEGER"
+        }
+      ],
+      "date_min": "1985-01-01",
+      "date_max": "2024-12-01",
+      "missing": {
+        "aet": 0,
+        "def": 0,
+        "pdsi": 0,
+        "pet": 0,
+        "pr": 0,
+        "ro": 0,
+        "soil": 0,
+        "srad": 0,
+        "swe": 0,
+        "tmmn": 0,
+        "tmmx": 0,
+        "vap": 0,
+        "vpd": 0,
+        "vs": 0,
+        "image_id": 0,
+        "date": 0,
+        "lon": 0,
+        "lat": 0,
+        "unique_loc_id": 0
+      }
+    },
+    {
+      "table": "terraclimate_unique_locs",
+      "rows": 36,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "lat",
+          "type": "FLOAT"
+        },
+        {
+          "name": "lon",
+          "type": "FLOAT"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "id": 0,
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "table": "terrain_aspect",
+      "rows": 33569,
+      "columns": [
+        {
+          "name": "aspect",
+          "type": "REAL"
+        },
+        {
+          "name": "image_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "lon",
+          "type": "REAL"
+        },
+        {
+          "name": "lat",
+          "type": "REAL"
+        },
+        {
+          "name": "unique_loc_id",
+          "type": "INTEGER"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "aspect": 0,
+        "image_id": 0,
+        "date": 33569,
+        "lon": 0,
+        "lat": 0,
+        "unique_loc_id": 0
+      }
+    },
+    {
+      "table": "terrain_aspect_unique_locs",
+      "rows": 33569,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "lat",
+          "type": "FLOAT"
+        },
+        {
+          "name": "lon",
+          "type": "FLOAT"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "id": 0,
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "table": "terrain_elevation",
+      "rows": 33569,
+      "columns": [
+        {
+          "name": "elevation",
+          "type": "REAL"
+        },
+        {
+          "name": "image_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "lon",
+          "type": "REAL"
+        },
+        {
+          "name": "lat",
+          "type": "REAL"
+        },
+        {
+          "name": "unique_loc_id",
+          "type": "INTEGER"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "elevation": 0,
+        "image_id": 0,
+        "date": 33569,
+        "lon": 0,
+        "lat": 0,
+        "unique_loc_id": 0
+      }
+    },
+    {
+      "table": "terrain_elevation_unique_locs",
+      "rows": 33569,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "lat",
+          "type": "FLOAT"
+        },
+        {
+          "name": "lon",
+          "type": "FLOAT"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "id": 0,
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "table": "terrain_mTPI",
+      "rows": 48,
+      "columns": [
+        {
+          "name": "elevation",
+          "type": "INTEGER"
+        },
+        {
+          "name": "image_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "lon",
+          "type": "REAL"
+        },
+        {
+          "name": "lat",
+          "type": "REAL"
+        },
+        {
+          "name": "unique_loc_id",
+          "type": "INTEGER"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "elevation": 0,
+        "image_id": 0,
+        "date": 48,
+        "lon": 0,
+        "lat": 0,
+        "unique_loc_id": 0
+      }
+    },
+    {
+      "table": "terrain_mTPI_unique_locs",
+      "rows": 48,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "lat",
+          "type": "FLOAT"
+        },
+        {
+          "name": "lon",
+          "type": "FLOAT"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "id": 0,
+        "lat": 0,
+        "lon": 0
+      }
+    },
+    {
+      "table": "terrain_slope",
+      "rows": 33569,
+      "columns": [
+        {
+          "name": "slope",
+          "type": "REAL"
+        },
+        {
+          "name": "image_id",
+          "type": "TEXT"
+        },
+        {
+          "name": "date",
+          "type": "TEXT"
+        },
+        {
+          "name": "lon",
+          "type": "REAL"
+        },
+        {
+          "name": "lat",
+          "type": "REAL"
+        },
+        {
+          "name": "unique_loc_id",
+          "type": "INTEGER"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "slope": 0,
+        "image_id": 0,
+        "date": 33569,
+        "lon": 0,
+        "lat": 0,
+        "unique_loc_id": 0
+      }
+    },
+    {
+      "table": "terrain_slope_unique_locs",
+      "rows": 33569,
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER"
+        },
+        {
+          "name": "lat",
+          "type": "FLOAT"
+        },
+        {
+          "name": "lon",
+          "type": "FLOAT"
+        }
+      ],
+      "date_min": null,
+      "date_max": null,
+      "missing": {
+        "id": 0,
+        "lat": 0,
+        "lon": 0
+      }
+    }
+  ],
+  "counts": {
+    "parcels": 38,
+    "complete_objects": 13019,
+    "fragments": 10847,
+    "intersected_objects": 9795,
+    "classes": 13
+  },
+  "classes": [
+    "bare earth",
+    "canopy",
+    "concrete",
+    "ground cover",
+    "impervious other",
+    "open water",
+    "roads",
+    "shadow",
+    "structures",
+    "turf",
+    "undeveloped lands",
+    "unlabelled",
+    "vehicles"
+  ],
+  "geometry": {
+    "invalid_objects": 0,
+    "null_geometry_objects": 0
+  },
+  "areas": {
+    "parcel_total_m2": 26757.410258490127,
+    "fragment_total_m2": 26757.410623982138,
+    "complete_object_total_m2": 36735.7264445145
+  },
+  "response": {
+    "fields": [
+      "cow_jan_21",
+      "cow_feb_21",
+      "cow_mar_21",
+      "cow_apr_21",
+      "cow_may_21",
+      "cow_jun_21",
+      "cow_jul_21",
+      "cow_aug_21",
+      "cow_sep_21",
+      "cow_oct_21",
+      "cow_nov_21",
+      "cow_dec_21"
+    ],
+    "units": "thousand gallons per month",
+    "missing_values": 0,
+    "annual_definition": "sum of the 12 raw monthly fields",
+    "reported_total_not_used_as_target": true,
+    "cow_indoor_outdoor_not_used": true
+  },
+  "landsat": {
+    "spatial_support": "nearest Landsat pixel center to complete-object centroid; fragments inherit complete-object pixel",
+    "resolution_context": "Landsat contextual support (~30 m); it does not resolve smaller aerial objects",
+    "quality": "Collection 2 QA_PIXEL bits 0-5 clear and QA_RADSAT=0; SR scale 0.0000275 and offset -0.2",
+    "temporal": "monthly 2021 medians, linear interpolation with endpoint carry for missing months",
+    "variables": [
+      "ndvi",
+      "ndmi",
+      "evi"
+    ],
+    "raw_2021": 11400,
+    "clear_2021": 7313,
+    "masked_qa": 4087,
+    "masked_saturation": 0,
+    "invalid_index": 0,
+    "pixel_count": 150,
+    "pixel_months": 1800,
+    "observed_pixel_months": 1800,
+    "missing_pixel_months_before_interpolation": 0,
+    "objects_per_pixel": {
+      "1": 324,
+      "2": 334,
+      "8": 313,
+      "9": 307,
+      "11": 39,
+      "12": 318,
+      "13": 324,
+      "16": 20,
+      "19": 13,
+      "24": 329,
+      "30": 17,
+      "31": 22,
+      "32": 38,
+      "37": 296,
+      "38": 291,
+      "40": 50,
+      "41": 276,
+      "43": 46,
+      "47": 29,
+      "48": 278,
+      "50": 298,
+      "52": 333,
+      "56": 333,
+      "57": 36,
+      "58": 316,
+      "59": 323,
+      "60": 290,
+      "61": 21,
+      "64": 21,
+      "65": 322,
+      "72": 303,
+      "73": 332,
+      "80": 325,
+      "81": 324,
+      "84": 296,
+      "85": 311,
+      "87": 324,
+      "89": 277,
+      "90": 333,
+      "93": 274,
+      "97": 18,
+      "101": 315,
+      "102": 310,
+      "106": 45,
+      "107": 3,
+      "108": 290,
+      "109": 269,
+      "110": 318,
+      "114": 320,
+      "116": 18,
+      "118": 314,
+      "125": 327,
+      "127": 41,
+      "131": 42,
+      "134": 316,
+      "138": 2,
+      "141": 51,
+      "142": 332,
+      "144": 314,
+      "148": 318
+    },
+    "used_pixels": 60,
+    "nearest_distance_degrees": {
+      "min": 1.407837269988715e-06,
+      "median": 0.00012356308869294503,
+      "max": 0.00022064296437214028
+    }
+  },
+  "aggregation_invariant": {
+    "class_area_nnls_max_abs_kgal": 2.842170943040401e-14,
+    "landsat_class_month_nnls_max_abs_kgal": 0.0
+  }
+}
