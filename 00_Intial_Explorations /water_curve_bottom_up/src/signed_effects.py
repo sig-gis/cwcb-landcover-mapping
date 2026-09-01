@@ -103,6 +103,29 @@ def make_figures(classes,y,preds,coef):
     annual=coef.sum(1); order=np.argsort(annual); fig,ax=plt.subplots(figsize=(9.5,5.7)); cs=["#2166ac" if annual[i]<0 else "#b2182b" for i in order]; ax.barh(np.arange(len(classes)),annual[order],color=cs); ax.axvline(0,color="black",lw=1); ax.set_yticks(np.arange(len(classes)),[classes[i] for i in order]); ax.set_xlabel("Signed annual contribution rate (kgal/100 m²/year)"); ax.set_title("Full-fit signed seasonal class rates"); ax.grid(axis="x",alpha=.2); fig.tight_layout(); path=FIG/"signed_annual_class_rates.png"; fig.savefig(path,dpi=170); plt.close(fig); paths["rates"]=path
     return paths
 
+def pure_class_figure(classes,coef,draws,name,title,color,signed):
+    """Monthly attribution for a hypothetical pure 100 m² object by class."""
+    months=np.arange(1,13); q=np.quantile(draws,[.05,.95],axis=0); annual_draws=draws.sum(2)
+    # One common scale within each figure makes class panels visually comparable.
+    ymin=min(0,float(q[0].min())) if signed else 0
+    ymax=max(float(q[1].max()),float(coef.max()))
+    pad=max((ymax-ymin)*.06,.1); ymin-=pad if signed else 0; ymax+=pad
+    fig,axes=plt.subplots(4,4,figsize=(15.5,13),sharex=True,sharey=True); axes=axes.ravel()
+    for j,c in enumerate(classes):
+        ax=axes[j]; alo,ahi=np.quantile(annual_draws[:,j],[.05,.95]); annual=coef[j].sum()
+        ax.fill_between(months,q[0,j],q[1,j],color=color,alpha=.23,label="90% joint-bootstrap band")
+        ax.plot(months,coef[j],color=color,lw=2.2,marker="o",ms=3,label="Full-fit attribution")
+        ax.axhline(0,color="black",lw=.9,alpha=.8)
+        ax.set_title(f"{c}\nAnnual: {annual:.1f} [{alo:.1f}, {ahi:.1f}] kgal",fontsize=10)
+        ax.grid(alpha=.2); ax.set_xlim(.7,12.3); ax.set_ylim(ymin,ymax); ax.set_xticks([1,3,5,7,9,11])
+    for ax in axes[len(classes):]: ax.axis("off")
+    for ax in axes[12:13]: ax.set_xlabel("Month")
+    fig.supylabel("Attributed metered-water requirement\n(kgal/month for a pure 100 m² object)")
+    handles,labels=axes[0].get_legend_handles_labels(); fig.legend(handles,labels,loc="lower center",ncol=2,frameon=False,bbox_to_anchor=(.5,.015))
+    fig.suptitle(title,fontsize=18,fontweight="bold")
+    fig.text(.5,.955,"Pure 100 m² class attribution; brackets are 90% intervals for annual sums.",ha="center",fontsize=10,color="#444")
+    fig.tight_layout(rect=(.03,.055,1,.94)); path=FIG/f"{name}.png"; fig.savefig(path,dpi=170,bbox_inches="tight"); plt.close(fig); return path
+
 def report(result,paths):
     rows="".join(f"<tr><td>{html.escape(x['model_id'])}</td><td>{x['monthly_mae_kgal']:.3f}</td><td>{x['monthly_rmse_kgal']:.3f}</td><td>{x['mean_cosine_similarity']:.3f}</td><td>{x['annual_mae_kgal']:.3f}</td></tr>" for x in result["metrics"])
     sections=[]
@@ -111,14 +134,14 @@ def report(result,paths):
         ("signed_seasonally_regularized_class_area","Signed seasonally regularized class-area",["Measure each class area.","Fit signed class-month rates jointly while smoothing adjacent months.","Multiply rates by object areas and sum to parcels."])]:
         sections.append(f"<section><h2>{title}</h2><ol>{''.join('<li>'+x+'</li>' for x in steps)}</ol><img src='{uri(paths[name])}'></section>")
     nneg=sum(x["estimate"]<0 for x in result["signed_annual_rates"]); confident=sum(x["p95"]<0 for x in result["signed_annual_rates"])
-    text=f'''<!doctype html><html><head><meta charset="utf-8"><title>Signed land-cover effects experiment</title><style>body{{font-family:system-ui,sans-serif;max-width:1050px;margin:auto;padding:32px;line-height:1.5;color:#222}}table{{border-collapse:collapse;width:100%}}th,td{{padding:8px;border-bottom:1px solid #ddd;text-align:right}}th:first-child,td:first-child{{text-align:left}}.note{{background:#f4f6f8;border-left:5px solid #6a3d9a;padding:14px 18px}}section{{margin:42px 0;border-top:1px solid #ccc;padding-top:22px}}img{{width:100%}}</style></head><body><h1>Allowing signed land-cover contributions</h1><div class="note">This is a separate sensitivity experiment; the existing presentation is unchanged. Negative object values mean the class reduces predicted metered-tap demand within the fitted additive accounting. They do not mean negative physical water flow at the meter.</div><h2>Held-out comparison</h2><table><tr><th>Model</th><th>Monthly MAE</th><th>RMSE</th><th>Cosine</th><th>Annual MAE</th></tr>{rows}</table><p><strong>Bottom line:</strong> allowing negativity changes the allocation but does not materially improve held-out prediction. Signed seasonal MAE is 3.665 versus 3.667 kgal for its nonnegative counterpart; RMSE and mean cosine are worse. The paired MAE-difference interval includes zero.</p>{''.join(sections)}<section><h2>Which classes became negative?</h2><img src="{uri(paths['rates'])}"><p>{nneg} classes have negative annual point estimates, but {confident} have a 90% bootstrap interval entirely below zero. Some additional classes are negative only in particular months. No final parcel-month prediction is negative.</p><p>{html.escape(result['interpretation'])}</p></section></body></html>'''
+    text=f'''<!doctype html><html><head><meta charset="utf-8"><title>Signed land-cover effects experiment</title><style>body{{font-family:system-ui,sans-serif;max-width:1150px;margin:auto;padding:32px;line-height:1.5;color:#222}}table{{border-collapse:collapse;width:100%}}th,td{{padding:8px;border-bottom:1px solid #ddd;text-align:right}}th:first-child,td:first-child{{text-align:left}}.note{{background:#f4f6f8;border-left:5px solid #6a3d9a;padding:14px 18px}}section{{margin:42px 0;border-top:1px solid #ccc;padding-top:22px}}img{{width:100%}}</style></head><body><h1>Allowing signed land-cover contributions</h1><div class="note">This is a separate sensitivity experiment; the existing presentation is unchanged. Negative object values mean the class reduces predicted metered-tap demand within the fitted additive accounting. They do not mean negative physical water flow at the meter.</div><h2>Held-out comparison</h2><table><tr><th>Model</th><th>Monthly MAE</th><th>RMSE</th><th>Cosine</th><th>Annual MAE</th></tr>{rows}</table><p><strong>Bottom line:</strong> allowing negativity changes the allocation but does not materially improve held-out prediction. Signed seasonal MAE is 3.665 versus 3.667 kgal for its nonnegative counterpart; RMSE and mean cosine are worse. The paired MAE-difference interval includes zero.</p>{''.join(sections)}<section><h2>Pure-class annual profiles: nonnegative model</h2><p>Each panel asks what the nonnegative seasonal model attributes to a hypothetical 100 m² object composed entirely of one class.</p><img src="{uri(paths['pure_nonnegative'])}"></section><section><h2>Pure-class annual profiles: signed model</h2><p>The matched signed figure permits a class-month attribution to fall below zero when the model associates that class with reduced metered-tap requirement.</p><img src="{uri(paths['pure_signed'])}"></section><section><h2>Which classes became negative?</h2><img src="{uri(paths['rates'])}"><p>{nneg} classes have negative annual point estimates, but {confident} have a 90% bootstrap interval entirely below zero. Some additional classes are negative only in particular months. No final parcel-month prediction is negative.</p><p>{html.escape(result['interpretation'])}</p></section></body></html>'''
     (REPORT/"signed_landcover_effects_report.html").write_text(text,encoding="utf-8")
 
 def main():
     os.environ.setdefault("OMP_NUM_THREADS","1"); parcels,objects,fragments,classes,_=core.load_spatial(); y=np.array([p["y"] for p in parcels]); d=core.base_matrix(fragments,len(parcels),len(classes))
     sr,sr_full,sr_folds,sr_alpha,sr_sel=lopo_ridge(d,y); ss,ss_full,ss_folds,cfg,scores,sel=lopo_smooth(d,y)
     # Matched nonnegative references, recomputed from the raw inputs.
-    nn,_,_,_,_=core.lopo_simple(d,y); ns,_,_,_,_,_=nonneg.lopo_joint(d,y)
+    nn,_,_,_,_=core.lopo_simple(d,y); ns,ns_full,_,ns_cfg,_,_=nonneg.lopo_joint(d,y)
     preds={"nonnegative_class_area":nn,"nonnegative_seasonally_regularized":ns,"signed_ridge_class_area":sr,"signed_seasonally_regularized_class_area":ss}
     metrics=[core.metrics(k,y,v) for k,v in preds.items()]; paired=core.paired_comparisons(y,preds); draws=bootstrap(d,y,cfg); save_outputs(parcels,objects,fragments,classes,d,y,ss,ss_full,cfg,draws)
     agg=aggregate(fragments,objects,classes,ss_full,len(y)); invariant=float(np.max(abs(agg-d@ss_full))); fullparcel=d@ss_full
@@ -132,6 +155,13 @@ def main():
     for j,c in enumerate(classes):
         vals=draws[:,j].sum(1); annual_rates.append({"class_final":c,"estimate":float(ss_full[j].sum()),"p05":float(np.quantile(vals,.05)),"p95":float(np.quantile(vals,.95))})
     result={"target":core.TARGETS,"models":["signed_ridge_class_area","signed_seasonally_regularized_class_area"],"metrics":metrics,"paired":paired,"signed_ridge_full_alpha":sr_alpha,"signed_seasonal_full_config":cfg,"signed_seasonal_outer_config_counts":{str(k):v for k,v in Counter(sel).items()},"negative_classes_any_month":negatives,"signed_annual_rates":annual_rates,"negative_fullfit_object_month_rate_count":int(sum(np.sum(ss_full[classes.index(o['class'])]<0) for o in objects)),"negative_fullfit_parcel_month_prediction_count":int(np.sum(fullparcel<0)),"minimum_fullfit_parcel_month_kgal":float(fullparcel.min()),"aggregation_max_abs_kgal":invariant,"interpretation":"Signed rates test whether a class may reduce required metered water. Because class areas are correlated and exhaustive, individual signed rates remain model-dependent; improvement must be judged held out."}
-    (OUT/"signed_effects_results.json").write_text(json.dumps(result,indent=2),encoding="utf-8"); paths=make_figures(classes,y,{"signed_ridge_class_area":sr,"signed_seasonally_regularized_class_area":ss},ss_full); report(result,paths); core.build_manifest(); print(json.dumps(result,indent=2))
+    (OUT/"signed_effects_results.json").write_text(json.dumps(result,indent=2),encoding="utf-8"); paths=make_figures(classes,y,{"signed_ridge_class_area":sr,"signed_seasonally_regularized_class_area":ss},ss_full)
+    rng=np.random.default_rng(SEED+45); nonnegative_draws=[]
+    for _ in range(300):
+        sample=rng.integers(0,len(y),len(y)); nonnegative_draws.append(nonneg.solve_joint(d[sample],y[sample],ns_cfg))
+    nonnegative_draws=np.asarray(nonnegative_draws)
+    paths["pure_nonnegative"]=pure_class_figure(classes,ns_full,nonnegative_draws,"pure_100m2_nonnegative_class_profiles","Nonnegative seasonal model: pure 100 m² class profiles","#1f78b4",False)
+    paths["pure_signed"]=pure_class_figure(classes,ss_full,draws,"pure_100m2_signed_class_profiles","Signed seasonal model: pure 100 m² class profiles","#e31a1c",True)
+    report(result,paths); core.build_manifest(); print(json.dumps(result,indent=2))
 
 if __name__=="__main__": main()
