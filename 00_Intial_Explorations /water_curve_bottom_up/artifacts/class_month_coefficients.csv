@@ -1,0 +1,625 @@
+artifact,class_final,month,coefficient,unit
+class_area_nnls_coef,bare earth,1,0.9027352314456933,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,2,0.7621123343732887,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,3,1.1794183552070865,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,4,0.5823179412535108,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,5,0.9086770176464345,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,6,0.1610628286287468,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,7,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,8,0.5370514920929228,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,9,2.5942867872764843,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,10,1.915659231293589,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,11,0.5647952545963734,kgal per 100 m2 per month
+class_area_nnls_coef,bare earth,12,0.7722755088241537,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,1,0.2859282992359038,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,2,0.1602889562748713,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,3,0.17929370901475394,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,4,0.18881492175497583,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,5,0.18578342354948027,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,6,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,7,0.23370818718716085,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,8,0.2123510563180062,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,9,1.0520668108820324,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,10,0.8970955922524397,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,11,0.0729650751502793,kgal per 100 m2 per month
+class_area_nnls_coef,canopy,12,0.19404364227594897,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,1,0.12048013504691914,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,2,0.05438707525949676,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,3,0.006768249610818178,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,4,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,5,0.09377120847724026,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,6,0.26637573448042295,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,7,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,8,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,9,0.3779942438432906,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,10,0.22948942120264468,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,11,0.28871822531695374,kgal per 100 m2 per month
+class_area_nnls_coef,concrete,12,0.3983180404185507,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,1,0.1966902931235975,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,2,0.22419257624626934,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,3,0.39192799303558173,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,4,0.24234564433128333,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,5,0.600714968331726,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,6,0.578158364947836,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,7,1.5711158159841174,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,8,0.41133863370854495,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,9,0.1330412547741267,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,10,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,11,0.3800047154173521,kgal per 100 m2 per month
+class_area_nnls_coef,ground cover,12,0.5589666079102177,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,1,0.018411014719168308,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,2,0.03771319255539887,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,3,0.08301375946254472,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,4,0.0044408575478390505,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,5,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,6,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,7,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,8,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,9,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,10,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,11,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,impervious other,12,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,open water,1,0.033235076109699765,kgal per 100 m2 per month
+class_area_nnls_coef,open water,2,0.04658389686379522,kgal per 100 m2 per month
+class_area_nnls_coef,open water,3,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,open water,4,0.003582812094187339,kgal per 100 m2 per month
+class_area_nnls_coef,open water,5,0.028126906038485316,kgal per 100 m2 per month
+class_area_nnls_coef,open water,6,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,open water,7,0.13422661003024128,kgal per 100 m2 per month
+class_area_nnls_coef,open water,8,1.313062194368902,kgal per 100 m2 per month
+class_area_nnls_coef,open water,9,2.3837755360246238,kgal per 100 m2 per month
+class_area_nnls_coef,open water,10,1.710437625432507,kgal per 100 m2 per month
+class_area_nnls_coef,open water,11,0.039917714438363415,kgal per 100 m2 per month
+class_area_nnls_coef,open water,12,0.02046002775565821,kgal per 100 m2 per month
+class_area_nnls_coef,roads,1,0.22641946569149346,kgal per 100 m2 per month
+class_area_nnls_coef,roads,2,0.2776586461799242,kgal per 100 m2 per month
+class_area_nnls_coef,roads,3,0.3170281215141278,kgal per 100 m2 per month
+class_area_nnls_coef,roads,4,0.39029317947535214,kgal per 100 m2 per month
+class_area_nnls_coef,roads,5,0.3098685350957971,kgal per 100 m2 per month
+class_area_nnls_coef,roads,6,0.3496745536912151,kgal per 100 m2 per month
+class_area_nnls_coef,roads,7,0.23458599791781284,kgal per 100 m2 per month
+class_area_nnls_coef,roads,8,0.31307096978212146,kgal per 100 m2 per month
+class_area_nnls_coef,roads,9,0.171146852445724,kgal per 100 m2 per month
+class_area_nnls_coef,roads,10,0.35700393761358024,kgal per 100 m2 per month
+class_area_nnls_coef,roads,11,0.4237258448599589,kgal per 100 m2 per month
+class_area_nnls_coef,roads,12,0.35735628990853385,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,1,0.7346645112380513,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,2,0.47599933789187104,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,3,0.8587003932340448,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,4,0.5087521175864417,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,5,0.531522961565872,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,6,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,7,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,8,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,9,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,10,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,11,0.5037027266071795,kgal per 100 m2 per month
+class_area_nnls_coef,shadow,12,0.2515812709087393,kgal per 100 m2 per month
+class_area_nnls_coef,structures,1,0.7739611171776555,kgal per 100 m2 per month
+class_area_nnls_coef,structures,2,0.8281400522487709,kgal per 100 m2 per month
+class_area_nnls_coef,structures,3,0.9493786733158561,kgal per 100 m2 per month
+class_area_nnls_coef,structures,4,1.0310989207768486,kgal per 100 m2 per month
+class_area_nnls_coef,structures,5,0.97051136146853,kgal per 100 m2 per month
+class_area_nnls_coef,structures,6,1.942808792315546,kgal per 100 m2 per month
+class_area_nnls_coef,structures,7,3.1997126231031694,kgal per 100 m2 per month
+class_area_nnls_coef,structures,8,3.188642955946342,kgal per 100 m2 per month
+class_area_nnls_coef,structures,9,3.427439165531352,kgal per 100 m2 per month
+class_area_nnls_coef,structures,10,2.441777589674346,kgal per 100 m2 per month
+class_area_nnls_coef,structures,11,0.9869607189423294,kgal per 100 m2 per month
+class_area_nnls_coef,structures,12,1.146954156570455,kgal per 100 m2 per month
+class_area_nnls_coef,turf,1,0.4427180600324021,kgal per 100 m2 per month
+class_area_nnls_coef,turf,2,0.5830313813426626,kgal per 100 m2 per month
+class_area_nnls_coef,turf,3,0.2612331991513676,kgal per 100 m2 per month
+class_area_nnls_coef,turf,4,0.47119495523496957,kgal per 100 m2 per month
+class_area_nnls_coef,turf,5,0.660266715499412,kgal per 100 m2 per month
+class_area_nnls_coef,turf,6,1.325688570481138,kgal per 100 m2 per month
+class_area_nnls_coef,turf,7,4.416338459796974,kgal per 100 m2 per month
+class_area_nnls_coef,turf,8,4.835200846410252,kgal per 100 m2 per month
+class_area_nnls_coef,turf,9,3.65875917919505,kgal per 100 m2 per month
+class_area_nnls_coef,turf,10,1.9753154479323662,kgal per 100 m2 per month
+class_area_nnls_coef,turf,11,0.8031051134327992,kgal per 100 m2 per month
+class_area_nnls_coef,turf,12,0.5610654550781753,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,1,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,2,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,3,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,4,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,5,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,6,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,7,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,8,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,9,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,10,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,11,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,undeveloped lands,12,0.0033080923172614067,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,1,0.3693757701330462,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,2,0.4574182454489663,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,3,0.5882431132789633,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,4,0.5607362762222596,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,5,0.30614609639365575,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,6,0.21615282679289624,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,7,0.6393555424871926,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,8,0.5040796480264417,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,9,0.12963196540291286,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,10,0.36331915954953026,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,11,0.6342836206029754,kgal per 100 m2 per month
+class_area_nnls_coef,unlabelled,12,0.41960955495101454,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,1,0.1172293955310879,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,2,0.04601107485103087,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,3,0.1184136684127813,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,4,0.07371333609601906,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,5,0.08999169852820191,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,6,0.38896636460814066,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,7,0.2172955884689769,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,8,0.1256735683150969,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,9,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,10,0.0,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,11,0.07928660281399724,kgal per 100 m2 per month
+class_area_nnls_coef,vehicles,12,0.25307640815625054,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,1,0.8843161630128775,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,2,0.8295251497475077,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,3,1.0053099425631458,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,4,0.7166514770376594,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,5,0.6892178383275909,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,6,0.24582049769714065,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,7,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,8,0.6857311959163757,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,9,1.9468897793630995,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,10,1.6993010751049136,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,11,0.8770479553379603,kgal per 100 m2 per month
+seasonal_nonnegative_coef,bare earth,12,0.8254612631194846,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,1,0.2559903591447948,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,2,0.1728341812749639,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,3,0.20381106619745448,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,4,0.15908791018330481,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,5,0.13213415256001493,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,6,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,7,0.3734027918321518,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,8,0.4084497019403747,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,9,0.9637210216171288,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,10,0.7681466007351271,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,11,0.16924592263966334,kgal per 100 m2 per month
+seasonal_nonnegative_coef,canopy,12,0.1827932555231699,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,1,0.091171861295215,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,2,0.05023465493165686,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,3,0.02981489369156374,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,4,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,5,0.034626383731253096,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,6,0.06156350032954874,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,7,0.004095436717956416,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,8,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,9,0.27745798560182594,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,10,0.2439563873455544,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,11,0.25085932745367745,kgal per 100 m2 per month
+seasonal_nonnegative_coef,concrete,12,0.33936290171333544,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,1,0.22458021636842912,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,2,0.2518131854787157,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,3,0.3598179964000666,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,4,0.36769489546360445,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,5,0.5669615422063694,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,6,0.6970370491123143,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,7,1.0441358703018058,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,8,0.5310111044317858,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,9,0.3080502433092256,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,10,0.1911531959174342,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,11,0.3266621263146506,kgal per 100 m2 per month
+seasonal_nonnegative_coef,ground cover,12,0.47256496991844904,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,1,0.027397795257205614,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,2,0.03644021670967442,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,3,0.04794579899170442,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,4,0.01677047176610007,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,5,0.0015638503053361683,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,6,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,7,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,8,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,9,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,10,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,11,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,impervious other,12,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,1,0.03210253441965576,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,2,0.028772788207857326,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,3,0.012660535176012476,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,4,0.030819804691054803,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,5,0.08092580850688766,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,6,0.17398961352612075,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,7,0.4759475650667674,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,8,1.1299604412914008,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,9,1.6173859123705827,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,10,1.2920025136572932,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,11,0.5257730111139828,kgal per 100 m2 per month
+seasonal_nonnegative_coef,open water,12,0.2712250375284097,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,1,0.24911117489116494,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,2,0.27792367165422305,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,3,0.31716642469659506,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,4,0.34203847442013163,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,5,0.30679499535988836,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,6,0.2988107380428383,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,7,0.2936042479710976,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,8,0.2884879085539467,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,9,0.2672577303237431,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,10,0.33364611669098015,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,11,0.3618113686511479,kgal per 100 m2 per month
+seasonal_nonnegative_coef,roads,12,0.35817530361960603,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,1,0.6779316806117331,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,2,0.5806457645470199,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,3,0.709933102087529,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,4,0.509816798682347,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,5,0.3473585316999138,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,6,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,7,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,8,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,9,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,10,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,11,0.17448865379492645,kgal per 100 m2 per month
+seasonal_nonnegative_coef,shadow,12,0.21321987311624685,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,1,0.7896643214130445,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,2,0.8217129252413414,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,3,0.9763259186652585,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,4,1.0050006853688906,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,5,1.0776344747434379,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,6,1.8284492600150877,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,7,3.2767682389526445,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,8,3.2782449876432653,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,9,3.473083793781987,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,10,2.420585782246755,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,11,1.0684680188814382,kgal per 100 m2 per month
+seasonal_nonnegative_coef,structures,12,1.1189354687780648,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,1,0.4617041428333892,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,2,0.5153597015306055,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,3,0.33954494442959265,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,4,0.5002165572293326,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,5,0.730941984258855,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,6,1.608704966609143,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,7,4.12320185338237,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,8,4.536196144595633,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,9,3.6119131205921624,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,10,2.0737638857050036,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,11,0.9073716534986557,kgal per 100 m2 per month
+seasonal_nonnegative_coef,turf,12,0.63772106856048,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,1,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,2,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,3,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,4,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,5,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,6,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,7,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,8,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,9,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,10,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,11,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,undeveloped lands,12,0.009061027946503155,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,1,0.4041554110719982,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,2,0.4444284200474313,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,3,0.573415768317862,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,4,0.5038250774760228,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,5,0.368984624801742,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,6,0.3140970671458873,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,7,0.6181774990863826,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,8,0.4616427956393173,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,9,0.3904471513068417,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,10,0.4296755835265372,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,11,0.49523296827678337,kgal per 100 m2 per month
+seasonal_nonnegative_coef,unlabelled,12,0.4615649539198887,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,1,0.09713574489055249,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,2,0.07757610035091417,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,3,0.10665510364058564,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,4,0.10008094097641074,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,5,0.13473792590292327,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,6,0.23582010312323257,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,7,0.22820345406847128,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,8,0.11083665408915928,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,9,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,10,0.0,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,11,0.05937879655913864,kgal per 100 m2 per month
+seasonal_nonnegative_coef,vehicles,12,0.1626145749388746,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,1,0.8989405394555885,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,2,0.7587605401722579,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,3,1.1778826376689415,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,4,0.5801723420794808,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,5,0.9075498888065182,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,6,0.2766122293305154,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,7,-1.129527111598656,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,8,0.6768569920019715,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,9,2.723615134545588,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,10,1.9540184436360835,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,11,0.5639079894437392,kgal per 100 m2 per month
+signed_ridge_class_area_coef,bare earth,12,0.7727025193947629,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,1,0.3042844541244358,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,2,0.1765026710293318,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,3,0.18988923203703503,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,4,0.19943596102621625,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,5,0.19221733292197518,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,6,-0.25756870772052265,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,7,0.8117814160292361,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,8,0.5356057184069709,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,9,1.3754396957787707,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,10,1.0559552739996416,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,11,0.08045393460252645,kgal per 100 m2 per month
+signed_ridge_class_area_coef,canopy,12,0.19396045885066307,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,1,0.1554445167688103,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,2,0.0852705862805865,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,3,0.02658790835475919,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,4,-0.009387168662516886,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,5,0.10607951533381187,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,6,0.3640686099124845,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,7,0.10419625932621061,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,8,0.0923987419734573,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,9,0.7782170753208565,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,10,0.4584316155614525,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,11,0.30315590862917313,kgal per 100 m2 per month
+signed_ridge_class_area_coef,concrete,12,0.39826692038892925,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,1,0.19178973992581935,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,2,0.2198639915197658,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,3,0.3890129231550346,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,4,0.24150467550692853,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,5,0.5990107547148835,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,6,0.6447969193665155,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,7,1.6529605786793005,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,8,0.41885878101914575,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,9,0.1280016986870725,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,10,-0.035751054362890146,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,11,0.3780492160299395,kgal per 100 m2 per month
+signed_ridge_class_area_coef,ground cover,12,0.5590159797141234,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,1,0.02059147317327508,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,2,0.0396391586209241,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,3,0.08421389327659293,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,4,0.0056789527368090115,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,5,-0.014074780082788728,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,6,-0.06455976298477008,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,7,-0.06463158371457187,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,8,-0.07175341025172176,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,9,-0.13394563792270667,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,10,-0.04895823228345723,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,11,-0.04743706511704083,kgal per 100 m2 per month
+signed_ridge_class_area_coef,impervious other,12,-0.02997761905883719,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,1,0.02989044960121665,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,2,0.04362963871452297,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,3,-0.032251457472606264,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,4,0.0017653397686032439,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,5,0.026933647424386205,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,6,-0.03334269444669007,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,7,0.15816965923109738,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,8,1.2831373665872172,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,9,2.3486044486688096,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,10,1.6888940884331156,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,11,0.0384849510954503,kgal per 100 m2 per month
+signed_ridge_class_area_coef,open water,12,0.020432869430467977,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,1,0.20998422153170465,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,2,0.26314164289983066,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,3,0.3076858048526796,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,4,0.37785794791239885,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,5,0.304151937276929,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,6,0.34417107993123397,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,7,0.14097794039662448,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,8,0.19362128740533235,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,9,0.06648610509118112,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,10,0.28155263174383677,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,11,0.41716404457366807,kgal per 100 m2 per month
+signed_ridge_class_area_coef,roads,12,0.3575196763716451,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,1,0.7868184206913172,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,2,0.5220660994952772,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,3,0.8880422165227999,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,4,0.5416848405955058,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,5,0.5498867949907577,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,6,-0.40157575354923564,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,7,-2.134341905172055,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,8,-1.2014348898670457,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,9,-1.0488414612353811,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,10,-0.2207779493984719,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,11,0.52525272538139,kgal per 100 m2 per month
+signed_ridge_class_area_coef,shadow,12,0.25151389985776923,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,1,0.7863128284271111,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,2,0.8390501324994699,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,3,0.9563793801152171,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,4,1.0408403633169416,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,5,0.9749182163923086,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,6,2.0798193585143276,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,7,3.8855314040304636,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,8,3.5349056142942565,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,9,3.7559734191436718,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,10,2.593147518947627,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,11,0.9922524012094266,kgal per 100 m2 per month
+signed_ridge_class_area_coef,structures,12,1.147054752977726,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,1,0.4417108085140686,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,2,0.5821416912684921,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,3,0.26055854594061495,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,4,0.47247369010897217,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,5,0.6599032525248468,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,6,1.4396111738029738,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,7,4.576241228621593,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,8,5.056560726829842,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,9,3.846194765304713,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,10,2.036484794962602,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,11,0.8026602540358143,kgal per 100 m2 per month
+signed_ridge_class_area_coef,turf,12,0.5610489820593505,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,1,-0.3546073907628353,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,2,-0.3132193598586397,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,3,-0.19984740618618582,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,4,-0.21221445465334318,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,5,-0.1250351342344187,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,6,-0.7105232652044765,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,7,-2.20568478042768,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,8,-2.8487558044370718,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,9,-3.106028556421138,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,10,-1.967747344252801,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,11,-0.1470932912594877,kgal per 100 m2 per month
+signed_ridge_class_area_coef,undeveloped lands,12,0.0034130167926152573,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,1,0.3667458880817758,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,2,0.4550953102985437,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,3,0.5866618888279411,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,4,0.5641113144268232,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,5,0.30526541681376823,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,6,0.33636372314204144,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,7,1.2745727322221554,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,8,0.8272617389038214,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,9,0.38465558126540683,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,10,0.4474749722860983,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,11,0.6333445614348073,kgal per 100 m2 per month
+signed_ridge_class_area_coef,unlabelled,12,0.41970448523912346,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,1,0.1179852124917991,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,2,0.046678676572740704,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,3,0.11871059052438883,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,4,0.07447505357307427,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,5,0.09030527335116942,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,6,0.3968199107812799,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,7,0.3321371749631382,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,8,0.17432666630476454,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,9,-0.2671874617032443,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,10,-0.2602907740677436,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,11,0.07975342251026765,kgal per 100 m2 per month
+signed_ridge_class_area_coef,vehicles,12,0.25317124847761624,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,1,0.8814462990351568,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,2,0.8269922506345455,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,3,1.0029994972077245,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,4,0.7150592590134719,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,5,0.6851449504215492,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,6,0.2144069967818404,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,7,-0.30255048190496414,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,8,0.6900583955453234,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,9,2.005972489767437,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,10,1.7330822481963812,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,11,0.8837470857268854,kgal per 100 m2 per month
+signed_seasonal_coef,bare earth,12,0.8251331545114389,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,1,0.2729216750865282,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,2,0.1888483398647485,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,3,0.2175640358420341,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,4,0.17434293264877398,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,5,0.14460026344295196,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,6,-0.04144372235339322,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,7,0.639793104520813,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,8,0.7009387641324922,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,9,1.2110177168382301,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,10,0.9155361422071833,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,11,0.2266519216997942,kgal per 100 m2 per month
+signed_seasonal_coef,canopy,12,0.20718626715612398,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,1,0.12269618149194822,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,2,0.08020587051327088,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,3,0.057578425021072466,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,4,0.03565731712510889,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,5,0.10105621515602098,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,6,0.2138195209882532,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,7,0.2694007420474052,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,8,0.26716798090269,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,9,0.5533637403625538,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,10,0.43522763994289604,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,11,0.34125584977847206,kgal per 100 m2 per month
+signed_seasonal_coef,concrete,12,0.3853010058583098,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,1,0.22039802270457137,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,2,0.2479357248717965,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,3,0.3565349936646123,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,4,0.36645605282597693,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,5,0.5727415933193616,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,6,0.7247909296556901,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,7,1.080114782364536,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,8,0.5458012382776961,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,9,0.3095142052355104,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,10,0.18332034043493228,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,11,0.3157794899219306,kgal per 100 m2 per month
+signed_seasonal_coef,ground cover,12,0.4637268306790205,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,1,0.028704973766194214,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,2,0.03705957454078068,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,3,0.04663808109030684,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,4,0.010868444861658076,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,5,-0.016225743869639014,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,6,-0.04903399822810037,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,7,-0.06816981359444063,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,8,-0.07683116644998045,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,9,-0.08412363101942966,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,10,-0.06017820729491383,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,11,-0.053084607637427644,kgal per 100 m2 per month
+signed_seasonal_coef,impervious other,12,-0.04083851977330544,kgal per 100 m2 per month
+signed_seasonal_coef,open water,1,0.029139986515896166,kgal per 100 m2 per month
+signed_seasonal_coef,open water,2,0.025939189268741947,kgal per 100 m2 per month
+signed_seasonal_coef,open water,3,0.009999704764700967,kgal per 100 m2 per month
+signed_seasonal_coef,open water,4,0.027907530462485584,kgal per 100 m2 per month
+signed_seasonal_coef,open water,5,0.07730232827711359,kgal per 100 m2 per month
+signed_seasonal_coef,open water,6,0.16902668383720887,kgal per 100 m2 per month
+signed_seasonal_coef,open water,7,0.4675137661798888,kgal per 100 m2 per month
+signed_seasonal_coef,open water,8,1.1128703933965802,kgal per 100 m2 per month
+signed_seasonal_coef,open water,9,1.5976699770459772,kgal per 100 m2 per month
+signed_seasonal_coef,open water,10,1.2760072444149375,kgal per 100 m2 per month
+signed_seasonal_coef,open water,11,0.5160052791761666,kgal per 100 m2 per month
+signed_seasonal_coef,open water,12,0.2649662236958901,kgal per 100 m2 per month
+signed_seasonal_coef,roads,1,0.23447325707589173,kgal per 100 m2 per month
+signed_seasonal_coef,roads,2,0.2639550075434968,kgal per 100 m2 per month
+signed_seasonal_coef,roads,3,0.30400725343827006,kgal per 100 m2 per month
+signed_seasonal_coef,roads,4,0.3269049232060766,kgal per 100 m2 per month
+signed_seasonal_coef,roads,5,0.28599682761458917,kgal per 100 m2 per month
+signed_seasonal_coef,roads,6,0.2673105692367448,kgal per 100 m2 per month
+signed_seasonal_coef,roads,7,0.2426221232150192,kgal per 100 m2 per month
+signed_seasonal_coef,roads,8,0.21526632925716013,kgal per 100 m2 per month
+signed_seasonal_coef,roads,9,0.19034667936953859,kgal per 100 m2 per month
+signed_seasonal_coef,roads,10,0.27181803825506695,kgal per 100 m2 per month
+signed_seasonal_coef,roads,11,0.32535689268965723,kgal per 100 m2 per month
+signed_seasonal_coef,roads,12,0.336256419085497,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,1,0.7224837579914438,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,2,0.6187766318333646,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,3,0.7297490575735698,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,4,0.4915662758089214,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,5,0.20224633309635187,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,6,-0.592431768437324,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,7,-1.318685139298962,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,8,-1.122268617431843,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,9,-0.7583990625486191,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,10,-0.2648940768388359,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,11,0.13609103315790705,kgal per 100 m2 per month
+signed_seasonal_coef,shadow,12,0.21405861340665674,kgal per 100 m2 per month
+signed_seasonal_coef,structures,1,0.8014722201117939,kgal per 100 m2 per month
+signed_seasonal_coef,structures,2,0.8330568198065444,kgal per 100 m2 per month
+signed_seasonal_coef,structures,3,0.9860052952689538,kgal per 100 m2 per month
+signed_seasonal_coef,structures,4,1.0224775393743653,kgal per 100 m2 per month
+signed_seasonal_coef,structures,5,1.1274227233480527,kgal per 100 m2 per month
+signed_seasonal_coef,structures,6,2.0164135175375097,kgal per 100 m2 per month
+signed_seasonal_coef,structures,7,3.6564373251552476,kgal per 100 m2 per month
+signed_seasonal_coef,structures,8,3.6121961569708163,kgal per 100 m2 per month
+signed_seasonal_coef,structures,9,3.735324705067025,kgal per 100 m2 per month
+signed_seasonal_coef,structures,10,2.5590898471805725,kgal per 100 m2 per month
+signed_seasonal_coef,structures,11,1.1065103307519732,kgal per 100 m2 per month
+signed_seasonal_coef,structures,12,1.1297789092957176,kgal per 100 m2 per month
+signed_seasonal_coef,turf,1,0.4615394456882913,kgal per 100 m2 per month
+signed_seasonal_coef,turf,2,0.5156153344246708,kgal per 100 m2 per month
+signed_seasonal_coef,turf,3,0.34025173440945156,kgal per 100 m2 per month
+signed_seasonal_coef,turf,4,0.5063948496850151,kgal per 100 m2 per month
+signed_seasonal_coef,turf,5,0.755521618118664,kgal per 100 m2 per month
+signed_seasonal_coef,turf,6,1.7054641475525976,kgal per 100 m2 per month
+signed_seasonal_coef,turf,7,4.292864259839304,kgal per 100 m2 per month
+signed_seasonal_coef,turf,8,4.710386683756701,kgal per 100 m2 per month
+signed_seasonal_coef,turf,9,3.750987650994702,kgal per 100 m2 per month
+signed_seasonal_coef,turf,10,2.139242670819113,kgal per 100 m2 per month
+signed_seasonal_coef,turf,11,0.9195298818975063,kgal per 100 m2 per month
+signed_seasonal_coef,turf,12,0.6377916367878804,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,1,-0.3281441968783614,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,2,-0.3056797037382319,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,3,-0.2301660595684708,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,4,-0.2603881476997294,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,5,-0.37414270132858973,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,6,-0.9772941880882116,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,7,-1.987811011671624,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,8,-2.5707071109575166,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,9,-2.582990715737126,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,10,-1.759265050098054,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,11,-0.6017677903921557,kgal per 100 m2 per month
+signed_seasonal_coef,undeveloped lands,12,-0.2089870947473882,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,1,0.40308846971275764,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,2,0.4445563637891797,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,3,0.5769329561532766,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,4,0.5205863745333646,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,5,0.4248869524771531,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,6,0.47949544850229026,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,7,0.9176857902269704,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,8,0.7302178782918005,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,9,0.5863408518425286,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,10,0.5263635736718659,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,11,0.522852162539239,kgal per 100 m2 per month
+signed_seasonal_coef,unlabelled,12,0.4682507912018775,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,1,0.09802983375557575,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,2,0.07860141216354533,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,3,0.10802383886791904,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,4,0.10301129421169926,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,5,0.14203741036932377,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,6,0.25590236870994043,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,7,0.26201906915335205,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,8,0.11694676294763455,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,9,-0.06608859690674307,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,10,-0.10362159533577309,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,11,0.019071652190258803,kgal per 100 m2 per month
+signed_seasonal_coef,vehicles,12,0.14295154365252305,kgal per 100 m2 per month

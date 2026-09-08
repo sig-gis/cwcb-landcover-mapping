@@ -1,0 +1,132 @@
+{
+  "artifact_version": "1.0",
+  "training_scope": "38 parcels, calendar year 2021",
+  "water_unit": "thousand gallons/month",
+  "area_unit": "100 square metres",
+  "month_order": [
+    "cow_jan_21",
+    "cow_feb_21",
+    "cow_mar_21",
+    "cow_apr_21",
+    "cow_may_21",
+    "cow_jun_21",
+    "cow_jul_21",
+    "cow_aug_21",
+    "cow_sep_21",
+    "cow_oct_21",
+    "cow_nov_21",
+    "cow_dec_21"
+  ],
+  "class_order": [
+    "bare earth",
+    "canopy",
+    "concrete",
+    "ground cover",
+    "impervious other",
+    "open water",
+    "roads",
+    "shadow",
+    "structures",
+    "turf",
+    "undeveloped lands",
+    "unlabelled",
+    "vehicles"
+  ],
+  "landsat_feature_order": {
+    "parcel_trajectory": "month-major: [NDVI, NDMI, EVI] for Jan, then Feb, ... Dec",
+    "object_month": "[intercept, scaled NDVI, scaled NDMI, scaled EVI]",
+    "scaling": "clip((value-p05)/(p95-p05), 0, 1) for bottom-up models"
+  },
+  "models": {
+    "mean_curve": {
+      "state": [
+        "mean_curve"
+      ],
+      "role": "baseline"
+    },
+    "class_area_nnls": {
+      "state": [
+        "class_area_nnls_coef"
+      ],
+      "formula": "parcel[p,m] = sum_c area[p,c]/100 * beta[c,m]",
+      "constraint": "beta >= 0",
+      "role": "simple retained reference"
+    },
+    "annual_class_area_common_shape": {
+      "state": [
+        "annual_class_area_coef",
+        "annual_common_shape"
+      ],
+      "role": "negative refinement result"
+    },
+    "seasonally_regularized_class_area": {
+      "state": [
+        "seasonal_nonnegative_coef"
+      ],
+      "penalties": {
+        "ridge": 10,
+        "adjacent_month_smoothness": 10,
+        "class_pooling": 0
+      },
+      "role": "preferred point-metric land-cover model"
+    },
+    "signed_ridge_class_area": {
+      "state": [
+        "signed_ridge_class_area_coef"
+      ],
+      "role": "signed sensitivity"
+    },
+    "signed_seasonally_regularized_class_area": {
+      "state": [
+        "signed_seasonal_coef"
+      ],
+      "penalties": {
+        "ridge": 10,
+        "adjacent_month_smoothness": 10
+      },
+      "role": "retained signed sensitivity"
+    },
+    "landsat_class_month_nnls": {
+      "state": [
+        "class_landsat_coef",
+        "class_landsat_scaler_p05",
+        "class_landsat_scaler_span_p95_minus_p05"
+      ],
+      "role": "class-specific Landsat negative result"
+    },
+    "proportion_multioutput_rf": {
+      "file": "proportion_multioutput_rf.joblib",
+      "role": "parcel nonlinear benchmark"
+    },
+    "landsat_only_parcel_ridge": {
+      "state": [
+        "landsat_parcel_feature_mean",
+        "landsat_parcel_feature_sd",
+        "landsat_parcel_ridge_coef",
+        "landsat_parcel_ridge_intercept"
+      ],
+      "role": "satellite-only parcel benchmark"
+    },
+    "landsat_only_parcel_rf": {
+      "file": "landsat_only_parcel_rf.joblib",
+      "role": "satellite-only nonlinear/tail benchmark"
+    },
+    "landsat_only_bottomup_nonnegative": {
+      "state": [
+        "landsat_only_bottomup_nonnegative_coef",
+        "landsat_only_scaler_p05",
+        "landsat_only_scaler_span_p95_minus_p05"
+      ],
+      "role": "best Landsat-only magnitude model"
+    },
+    "landsat_only_bottomup_signed": {
+      "state": [
+        "landsat_only_bottomup_signed_coef",
+        "landsat_only_scaler_p05",
+        "landsat_only_scaler_span_p95_minus_p05"
+      ],
+      "role": "satellite-only signed sensitivity"
+    }
+  },
+  "warning": "These fitted values reproduce the 2021 study. Retrain rather than directly transfer them to a larger five-year population."
+}

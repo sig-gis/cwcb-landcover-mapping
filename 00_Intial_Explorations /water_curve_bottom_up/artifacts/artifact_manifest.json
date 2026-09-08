@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "file": "artifact_definitions.json",
+      "bytes": 3553,
+      "sha256": "4284d0b2af904fb7dea56f5c5151584c963ffeaadf2ee276ae94e05c9fd58078"
+    },
+    {
+      "file": "class_month_coefficients.csv",
+      "bytes": 51070,
+      "sha256": "0790fca65d4b756b95aff768997ddadf6037967a7187d535b4277edef5f47d1b"
+    },
+    {
+      "file": "landsat_only_parcel_rf.joblib",
+      "bytes": 611008,
+      "sha256": "c93a5458f055db47a287ceb0b19a800ff6c91204a3a1a33f8443f1852e380661"
+    },
+    {
+      "file": "linear_model_state.npz",
+      "bytes": 17087,
+      "sha256": "ff20f24563e5cc1e46ab233003b8237e33416c8f46cb02d1acb5951697519670"
+    },
+    {
+      "file": "proportion_multioutput_rf.joblib",
+      "bytes": 606524,
+      "sha256": "1b7afe02168a58fa2e399345ba7d834d72edaa6c062cd49115d2728b10df9371"
+    },
+    {
+      "file": "reconstruction_checks.json",
+      "bytes": 290,
+      "sha256": "6692f367f8858fdb3e88369668893b607a32f6778777d069d16292b46474dd73"
+    }
+  ],
+  "source_input_hashes": {
+    "satellite_timeseries.sqlite": "1432f909336daf96a794d0b606597672afbc6bab3387fc8731b5e6133e5cac4b",
+    "parcels_water_2021.gpkg": "ef90a64f08b9b258b98cf3915b95a70b439f36516db3bce6c356780e131737b2",
+    "landcover_2021.gpkg": "f61785afc441b15c52705d4ee5cc6e506d2ef726f750d71e443963bdb4b0f1a1"
+  },
+  "code": [
+    "src/pipeline.py",
+    "src/refinement.py",
+    "src/signed_effects.py",
+    "src/landsat_only.py",
+    "src/export_model_artifacts.py"
+  ]
+}

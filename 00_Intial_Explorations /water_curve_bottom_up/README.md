@@ -35,7 +35,9 @@ three files in the Colab runtime, installs dependencies, and runs:
 3. `src.signed_effects`
 4. `src.landsat_only`
 5. `src.build_uncertainty_report`
-6. the test suite
+6. `src.export_model_artifacts`
+7. `src.build_technical_report`
+8. the test suite
 
 No archived predictions, parameters, crosswalks, or derived targets are used.
 
@@ -46,9 +48,23 @@ No archived predictions, parameters, crosswalks, or derived targets are used.
 - `reports/water_use_uncertainty_report.html`: six-method uncertainty report.
 - `reports/signed_landcover_effects_report.html`: separate signed-effects report.
 - `reports/landsat_only_report.html`: four class-free Landsat-only experiments.
+- `reports/TECHNICAL_METHODS_AND_FIVE_YEAR_HANDOFF.md`: authoritative method,
+  theory, validation, uncertainty, model-selection, and scale-up specification;
+  a standalone HTML rendering is included beside it.
+- `artifacts/`: fitted coefficients, feature and class ordering, serialized
+  forests, reconstruction checks, provenance, and SHA-256 manifest.
 - `outputs/`: compact audit, metrics, paired comparisons, and class-rate tables.
 - `inputs/README.md`: input schema and placement instructions; source data are
   intentionally excluded from Git.
 
 Water units are thousand gallons per month. Areas are measured in square metres
 in EPSG:32613; unit rates are reported per 100 square metres.
+
+## Using the five-year database
+
+Treat the included 2021 artifacts as a verified reference fit, not as
+coefficients that can automatically be transferred to a new population. The
+technical handoff specifies the required long-form parcel-month, object, and
+pixel-month tables; grouped parcel/year validation; QA and Landsat scaling;
+bottom-up aggregation invariants; and the refit-versus-transfer checks needed
+for the larger water-use and Landsat panel.
