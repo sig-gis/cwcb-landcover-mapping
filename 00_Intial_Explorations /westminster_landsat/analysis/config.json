@@ -1,0 +1,21 @@
+{
+  "year": 2021,
+  "satellite_database": "outputs/CWCB_Westminster_2026_08_19_1700.sqlite",
+  "parcel_database": "prior analysis/add_par_all/Parcels_CoW_2021.gpkg",
+  "output_directory": "outputs/seasonal_2021",
+  "model": "landsat_only_bottomup_nonnegative",
+  "alphas": [0.1, 1.0, 10.0, 100.0, 1000.0],
+  "seed": 20260903,
+  "outer_folds": 5,
+  "inner_folds": 5,
+  "area_unit_m2": 100.0,
+  "grid_size_m": 30.0,
+  "area_crs": "EPSG:32613",
+  "minimum_spatial_coverage": 0.999999,
+  "sql_support_batch_size": 500,
+  "parcel_bootstrap_draws": 5000,
+  "target": "raw_monthly_metered_total",
+  "delta": "predicted_minus_observed",
+  "join_policy": "retain_supplied_matches_and_flag_conflicts",
+  "missing_target_policy": "preserve_null_exclude_incomplete_year_from_evaluation"
+}

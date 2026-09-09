@@ -1,0 +1,17 @@
+{
+  "year": 2021,
+  "model": "landsat_only_bottomup_nonnegative_by_size",
+  "source_run": "outputs/seasonal_2021",
+  "output_directory": "outputs/seasonal_2021_size_binned",
+  "area_breaks_m2": [500, 1000, 2000, 10000, 50000],
+  "class_labels": ["under_500", "500_to_1000", "1000_to_2000", "2000_to_10000", "10000_to_50000", "50000_plus"],
+  "alphas": [0.1, 1.0, 10.0, 100.0, 1000.0],
+  "inner_folds": 5,
+  "outer_folds": 5,
+  "seed": 20260903,
+  "target": "raw_monthly_metered_total",
+  "delta": "predicted_minus_observed",
+  "signed_departure": "observed_minus_predicted",
+  "outer_fold_policy": "reuse_original_assignments",
+  "area_bin_policy": "lower_inclusive_upper_exclusive"
+}

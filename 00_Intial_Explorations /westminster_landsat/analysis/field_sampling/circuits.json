@@ -1,0 +1,1329 @@
+[
+  {
+    "circuit_id": "C30008",
+    "street_name": "W 106th Pl",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      30008
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 30008,
+        "from": 0.33333333333029463,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 32863,
+    "park_access": {
+      "road_id": 30008,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 30008,
+      "fraction": 0.33333333333177934
+    },
+    "crossing_exposure": 1,
+    "review_note": "Four parcels are the whole 106th Place cul-de-sac, not an imposed sample limit. Meadowlark Park wraps the terminal side; retain as a small complete backup."
+  },
+  {
+    "circuit_id": "C30015",
+    "street_name": "N Bryant Ct",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      30015
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 30015,
+        "from": 0.8133282362233855,
+        "to": 0.9192621097167921
+      }
+    ],
+    "park_parcel_id": 34343,
+    "park_access": {
+      "road_id": 30015,
+      "fraction": 0.9192621097167921
+    },
+    "start": {
+      "road_id": 30015,
+      "fraction": 0.8133282362244053
+    },
+    "crossing_exposure": 1,
+    "review_note": "Complete Bryant cul-de-sac, including the narrow approaches at the far side of the bulb. Assessment numbering now follows around the fan; landscape is alongside the entrance."
+  },
+  {
+    "circuit_id": "C30033",
+    "street_name": "W 107th Pl",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      30033,
+      30051
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 30051,
+        "from": 0.1036501560535861,
+        "to": 1.0
+      },
+      {
+        "road_id": 30033,
+        "from": 0.0,
+        "to": 0.0
+      },
+      {
+        "road_id": 30051,
+        "from": 1.0,
+        "to": 0.0943526104174141
+      }
+    ],
+    "park_parcel_id": 24729,
+    "park_access": {
+      "road_id": 30051,
+      "fraction": 0.09435261041708709
+    },
+    "start": {
+      "road_id": 30051,
+      "fraction": 0.10365015605380411
+    },
+    "crossing_exposure": 1,
+    "review_note": "Stem and bulb form one connected unit, even though the source stores multiple pieces. Include the parcels on the short landscape approach; the eastern parallel-street row has separate access and is not a second sampling street."
+  },
+  {
+    "circuit_id": "C30034",
+    "street_name": "N Alcott Way",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      30034,
+      60263
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 30032,
+        "from": 0.0,
+        "to": 0.8478503752407335
+      },
+      {
+        "road_id": 60263,
+        "from": 0.35565967039367313,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 23639,
+    "park_access": {
+      "road_id": 30032,
+      "fraction": 0.8478503752421939
+    },
+    "start": {
+      "road_id": 60263,
+      "fraction": 0.35565967039367313
+    },
+    "crossing_exposure": 2,
+    "review_note": "Complete Alcott bulb loop plus the short stem to its common tract. Both sides of that stem are part of the assessment; no adjoining court is appended."
+  },
+  {
+    "circuit_id": "C30862",
+    "street_name": "W 101st Dr",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      30862
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 10855,
+    "park_access": {
+      "road_id": 30862,
+      "fraction": 0.3533346873441821
+    },
+    "start": {
+      "road_id": 30862,
+      "fraction": 0.3533346873434648
+    },
+    "crossing_exposure": 2,
+    "review_note": "Complete small 101st Drive connector with three facing parcels and the opposite corner. The paired tract adjoins the southern end; no side branch is appended."
+  },
+  {
+    "circuit_id": "C31093",
+    "street_name": "W 106th Ave",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      31093,
+      31101
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 18219,
+    "park_access": {
+      "road_id": 31101,
+      "fraction": 0.8969016306942763
+    },
+    "start": {
+      "road_id": 31101,
+      "fraction": 0.8969016306942763
+    },
+    "crossing_exposure": 2,
+    "review_note": "Both sides of the full 106th Avenue unit comprise larger lots. Keep as a longer backup, with access-strip/context distinctions retained; Overland Trail open space is directly at the western end."
+  },
+  {
+    "circuit_id": "C31221",
+    "street_name": "N Ammons Ct",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      31221
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 31221,
+        "from": 0.3333333333256634,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 28197,
+    "park_access": {
+      "road_id": 31221,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 31221,
+      "fraction": 0.3333333333258778
+    },
+    "crossing_exposure": 1,
+    "review_note": "Full Ammons dead-end with four unit parcels on each side. Common landscape surrounds the short street; no larger complex tour is included."
+  },
+  {
+    "circuit_id": "C31401",
+    "street_name": "N Flower Ct",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      31401
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 31401,
+        "from": 0.33333333333700066,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 20247,
+    "park_access": {
+      "road_id": 67554,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 31401,
+      "fraction": 0.33333333333700066
+    },
+    "crossing_exposure": 1,
+    "review_note": "Entire six-parcel Flower cul-de-sac. Trailside Park wraps the bulb, so one perimeter walk covers houses and paired space."
+  },
+  {
+    "circuit_id": "C31402",
+    "street_name": "N Field Ct",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      31402
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 31402,
+        "from": 0.33333333333200577,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 20247,
+    "park_access": {
+      "road_id": 67556,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 31402,
+      "fraction": 0.33333333333200577
+    },
+    "crossing_exposure": 1,
+    "review_note": "Entire six-parcel Field cul-de-sac. Both rows and bulb are included, with the Trailside Park connection at the terminal end."
+  },
+  {
+    "circuit_id": "C31406",
+    "street_name": "N Field Way",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      31406
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 31406,
+        "from": 0.33333333333964776,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 20247,
+    "park_access": {
+      "road_id": 67615,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 31406,
+      "fraction": 0.33333333333882714
+    },
+    "crossing_exposure": 1,
+    "review_note": "Entire Field Way cul-de-sac, including its terminal corner. Trailside Park wraps the end; assessment order follows the perimeter."
+  },
+  {
+    "circuit_id": "C31438",
+    "street_name": "W 86th Ave",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      31438,
+      67606
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 20247,
+    "park_access": {
+      "road_id": 31438,
+      "fraction": 0.11669331190604337
+    },
+    "start": {
+      "road_id": 31438,
+      "fraction": 0.11669331190341187
+    },
+    "crossing_exposure": 2,
+    "review_note": "Short complete 86th Avenue connector with facing parcels on both sides. Trailside Park is accessible through the intervening common slot; do not append the southern court."
+  },
+  {
+    "circuit_id": "C31568",
+    "street_name": "W 110th Ave",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      31568
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 28630,
+    "park_access": {
+      "road_id": 31568,
+      "fraction": 0.5250488675727522
+    },
+    "start": {
+      "road_id": 31568,
+      "fraction": 0.5250488675727522
+    },
+    "crossing_exposure": 2,
+    "review_note": "Full 110th Avenue connector with its southern row and northern corner parcel. Northern remainder is open space; visit it directly from the same street."
+  },
+  {
+    "circuit_id": "C31694",
+    "street_name": "N Seton Pl",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      31694
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 31694,
+        "from": 0.333333333331129,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 12484,
+    "park_access": {
+      "road_id": 31750,
+      "fraction": 1.0
+    },
+    "start": {
+      "road_id": 31694,
+      "fraction": 0.3333333333322477
+    },
+    "crossing_exposure": 3,
+    "review_note": "Entire seven-parcel Seton cul-de-sac. Both rows and the fan are included, with North Cotton Creek open space reached through the entrance-side slot."
+  },
+  {
+    "circuit_id": "C31876",
+    "street_name": "N Chase Way",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      31876
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 31876,
+        "from": 0.8598599844299766,
+        "to": 1.0
+      }
+    ],
+    "park_parcel_id": 12343,
+    "park_access": {
+      "road_id": 32170,
+      "fraction": 1.0
+    },
+    "start": {
+      "road_id": 31876,
+      "fraction": 0.8598599844299766
+    },
+    "crossing_exposure": 4,
+    "review_note": "Complete Chase bend with both rows and the end corners. Landscape connection is across the northeastern end junction; the return stays on the same curved unit."
+  },
+  {
+    "circuit_id": "C31993",
+    "street_name": "N Eaton Way",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      31993
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 67829,
+        "from": 0.0,
+        "to": 1.0
+      },
+      {
+        "road_id": 31902,
+        "from": 0.0,
+        "to": 0.07795565655961045
+      },
+      {
+        "road_id": 31993,
+        "from": 0.2629071072107615,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 1550,
+    "park_access": {
+      "road_id": 31902,
+      "fraction": 0.07795565655961045
+    },
+    "start": {
+      "road_id": 31993,
+      "fraction": 0.2629071072107615
+    },
+    "crossing_exposure": 4,
+    "review_note": "Short street unit joined to its park approach as one L-shaped walk. Include the six parcels passed along that approach, rather than sampling only the six core parcels."
+  },
+  {
+    "circuit_id": "C32030",
+    "street_name": "N Gray St",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      32030,
+      67762
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 11532,
+    "park_access": {
+      "road_id": 67762,
+      "fraction": 0.9861600926496054
+    },
+    "start": {
+      "road_id": 67762,
+      "fraction": 0.9861600926490685
+    },
+    "crossing_exposure": 2,
+    "review_note": "Continuous short Gray bend with both facing rows and the common-space interruption. Retain the natural junction limits and immediate corners, avoiding the farther same-road continuation."
+  },
+  {
+    "circuit_id": "C32054",
+    "street_name": "N Utica Way",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      32054
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 32054,
+        "from": 0.1328199121734225,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 16405,
+    "park_access": {
+      "road_id": 32196,
+      "fraction": 1.0
+    },
+    "start": {
+      "road_id": 32054,
+      "fraction": 0.1328199121734225
+    },
+    "crossing_exposure": 4,
+    "review_note": "Continuous curved row on both sides, with genuine end corners. Stop at the public junctions and visit Bradburn Park across the southern end; avoid expanding north into the next road segment."
+  },
+  {
+    "circuit_id": "C32070",
+    "street_name": "W 110th Ct",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      32070,
+      32071
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 26869,
+    "park_access": {
+      "road_id": 32071,
+      "fraction": 0.5726754717101342
+    },
+    "start": {
+      "road_id": 32071,
+      "fraction": 0.5726754717101342
+    },
+    "crossing_exposure": 2,
+    "review_note": "Whole 110th Court bend, three facing parcels and the opposite end corner. The other side is common landscape, not missing houses; keep as a small backup."
+  },
+  {
+    "circuit_id": "C32081",
+    "street_name": "N Newton Dr",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      32081,
+      32393,
+      32394
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 24426,
+    "park_access": {
+      "road_id": 32393,
+      "fraction": 0.2157136318469651
+    },
+    "start": {
+      "road_id": 32393,
+      "fraction": 0.2157136318469651
+    },
+    "crossing_exposure": 2,
+    "review_note": "Complete curved unit plus its northern end corner. Landscape occupies the outside of the curve; no expansion into the interior courts. Keep the large end lots as whole parcels."
+  },
+  {
+    "circuit_id": "C32090",
+    "street_name": "N Bradburn Blvd",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      32090,
+      32387,
+      32388
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 33510,
+    "park_access": {
+      "road_id": 32090,
+      "fraction": 0.14943624845027711
+    },
+    "start": {
+      "road_id": 32090,
+      "fraction": 0.14943624845027711
+    },
+    "crossing_exposure": 2,
+    "review_note": "Follow the continuous bend through the street-name change. Include the end corners and common-drive frontage; the open-space boundary follows the outside of the bend, so no extra neighborhood branch is needed."
+  },
+  {
+    "circuit_id": "C32324",
+    "street_name": "W 116th Way",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      32324,
+      67783
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 33481,
+    "park_access": {
+      "road_id": 32324,
+      "fraction": 0.00038848585777903426
+    },
+    "start": {
+      "road_id": 32324,
+      "fraction": 0.00038848585777903426
+    },
+    "crossing_exposure": 2,
+    "review_note": "Short complete bend bounded by the Osceola/Newton public junctions. The address change is not an exclusion; park is directly opposite the curve."
+  },
+  {
+    "circuit_id": "C32573",
+    "street_name": "N Kalamath Ct",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      32573
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 32573,
+        "from": 0.0786098213508951,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 14679,
+    "park_access": {
+      "road_id": 32573,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 32573,
+      "fraction": 0.0786098213508951
+    },
+    "crossing_exposure": 1,
+    "review_note": "Whole straight cul-de-sac with both rows and the end fan. Landscape adjoins the terminal bulb, giving a simple outward, landscape, return circuit."
+  },
+  {
+    "circuit_id": "C32649",
+    "street_name": "W Lexington Ave",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      32649
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 29924,
+    "park_access": {
+      "road_id": 32649,
+      "fraction": 0.508828395531556
+    },
+    "start": {
+      "road_id": 32649,
+      "fraction": 0.5088283955317744
+    },
+    "crossing_exposure": 2,
+    "review_note": "Continuous bend with the immediate end corners on both sides. The greenbelt entrance lies midway along the inside of the curve; no extra court is needed."
+  },
+  {
+    "circuit_id": "C32716",
+    "street_name": "N Umatilla Ct",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      32716,
+      32717
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 10710,
+    "park_access": {
+      "road_id": 32716,
+      "fraction": 0.2303650922720469
+    },
+    "start": {
+      "road_id": 32716,
+      "fraction": 0.2303650922720469
+    },
+    "crossing_exposure": 2,
+    "review_note": "Both rows of the diagonal unit and southern bend form a single return walk. Assess the narrow common space at the bend; do not add the parallel internal access streets."
+  },
+  {
+    "circuit_id": "C32734",
+    "street_name": "N Vallejo Cir",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      32734,
+      32735,
+      32736,
+      32918
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 32918,
+        "from": 0.4703902084936108,
+        "to": 1.0
+      }
+    ],
+    "park_parcel_id": 17921,
+    "park_access": {
+      "road_id": 32707,
+      "fraction": 1.0
+    },
+    "start": {
+      "road_id": 32918,
+      "fraction": 0.4703902084907575
+    },
+    "crossing_exposure": 4,
+    "review_note": "Whole diagonal block and immediate end corners. The open-space connection is at the northeastern junction; complete both rows and return to that end."
+  },
+  {
+    "circuit_id": "C33156",
+    "street_name": "W Ranch Dr",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      33156,
+      63902,
+      63939,
+      63957
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 16506,
+    "park_access": {
+      "road_id": 63939,
+      "fraction": 0.1613979401490433
+    },
+    "start": {
+      "road_id": 63939,
+      "fraction": 0.16139794014821232
+    },
+    "crossing_exposure": 1,
+    "review_note": "Whole Ranch Drive dead-end. Complete attached groups around the bulb and along both sides, increasing the first-pass count from 28 to 34 rather than leaving partial rows. Assess each group consecutively and the common tract at the entrance."
+  },
+  {
+    "circuit_id": "C33229",
+    "street_name": "N Lipan Ct",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      33229
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 33229,
+        "from": 0.3333333333289716,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 22782,
+    "park_access": {
+      "road_id": 67483,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 33229,
+      "fraction": 0.3333333333292434
+    },
+    "crossing_exposure": 1,
+    "review_note": "Full six-parcel Lipan cul-de-sac with terminal fan and greenbelt slot. Walk around the bulb and return on the opposite side."
+  },
+  {
+    "circuit_id": "C33232",
+    "street_name": "N Decatur St",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      33232,
+      33233
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 22801,
+    "park_access": {
+      "road_id": 33232,
+      "fraction": 0.09277954999491225
+    },
+    "start": {
+      "road_id": 33232,
+      "fraction": 0.09277954999491225
+    },
+    "crossing_exposure": 2,
+    "review_note": "Full L-shaped connector, with its four immediate end parcels and open space at the bend. Sparse frontage makes this a backup; the northern leg contains no omitted intervening house parcels in the logical frontage audit."
+  },
+  {
+    "circuit_id": "C33295",
+    "street_name": "N Alcott St",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      33295,
+      67918
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 14163,
+    "park_access": {
+      "road_id": 67918,
+      "fraction": 0.11438529829637381
+    },
+    "start": {
+      "road_id": 67918,
+      "fraction": 0.11438529829637381
+    },
+    "crossing_exposure": 2,
+    "review_note": "Complete Alcott connector with four end-corner parcels and intervening common land. This is a sparse but coherent single-street return walk."
+  },
+  {
+    "circuit_id": "C33384",
+    "street_name": "W 127th Ct",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      33384
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 28381,
+    "park_access": {
+      "road_id": 33384,
+      "fraction": 0.5990620971781967
+    },
+    "start": {
+      "road_id": 33384,
+      "fraction": 0.5990620971772388
+    },
+    "crossing_exposure": 1,
+    "review_note": "Whole curved 127th Court cul-de-sac, both rows and end fan. Visit the adjacent open-space slot when reached and return along the opposite row."
+  },
+  {
+    "circuit_id": "C33539",
+    "street_name": "W 77th Dr",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      33539
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 33539,
+        "from": 0.747872910274913,
+        "to": 0.8014937367840499
+      }
+    ],
+    "park_parcel_id": 17720,
+    "park_access": {
+      "road_id": 33539,
+      "fraction": 0.8014937367814519
+    },
+    "start": {
+      "road_id": 33539,
+      "fraction": 0.747872910274913
+    },
+    "crossing_exposure": 2,
+    "review_note": "Compact road connection with the actual facing/corner parcels on both sides. The revised membership stops before the next same-name segment. Wolff Run adjoins the southwestern side."
+  },
+  {
+    "circuit_id": "C33544",
+    "street_name": "W 70th Pl",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      33544
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 33544,
+        "from": 0.8596668788465227,
+        "to": 1.0
+      }
+    ],
+    "park_parcel_id": 17815,
+    "park_access": {
+      "road_id": 61007,
+      "fraction": 1.0
+    },
+    "start": {
+      "road_id": 33544,
+      "fraction": 0.8596668788465227
+    },
+    "crossing_exposure": 4,
+    "review_note": "Full 70th Place block, including differently addressed end properties. Complete one side, return on the other, and make the short eastern connection to England Park."
+  },
+  {
+    "circuit_id": "C33553",
+    "street_name": "N Tennyson St",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      33553,
+      34339
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 11347,
+    "park_access": {
+      "road_id": 34339,
+      "fraction": 0.3627377250850831
+    },
+    "start": {
+      "road_id": 34339,
+      "fraction": 0.3627377250850831
+    },
+    "crossing_exposure": 2,
+    "review_note": "Complete north\u2013south block including the northern bend; canal/common-land gap is a real intervening space. Both street sides are assessed on outward/return legs, with the tract midway along the same street."
+  },
+  {
+    "circuit_id": "C33650",
+    "street_name": "N Clay St",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      33650
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 33650,
+        "from": 0.2504108600253804,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 31303,
+    "park_access": {
+      "road_id": 33650,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 33650,
+      "fraction": 0.2504108600248248
+    },
+    "crossing_exposure": 4,
+    "review_note": "Short bend with the facing row and immediate end frontage retained. Same-road parcels farther down the continuation were removed by the revised access test; pair is Cobblestone Park at the northern end."
+  },
+  {
+    "circuit_id": "C33655",
+    "street_name": "N Circle Dr",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      33655
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 33655,
+        "from": 0.12098556261967681,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 7044,
+    "park_access": {
+      "road_id": 34172,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 33655,
+      "fraction": 0.12098556261883887
+    },
+    "crossing_exposure": 4,
+    "review_note": "Complete Circle Drive unit, including its western bend and both rows to the eastern junction. Oakwood Park is reached at the western end; do not expand around the adjoining street."
+  },
+  {
+    "circuit_id": "C33732",
+    "street_name": "W 75th Ave",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      33732,
+      61152,
+      61202
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 34278,
+        "from": 0.0,
+        "to": 0.7730197014370286
+      },
+      {
+        "road_id": 61152,
+        "from": 0.13722984334330116,
+        "to": 0.0
+      },
+      {
+        "road_id": 61202,
+        "from": 1.0,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 13711,
+    "park_access": {
+      "road_id": 34278,
+      "fraction": 0.7730197014370286
+    },
+    "start": {
+      "road_id": 61152,
+      "fraction": 0.13722984334330116
+    },
+    "crossing_exposure": 4,
+    "review_note": "Treat the short 75th Avenue unit and the Torii Square park approach as one L-shaped circuit. Include both rows encountered along the approach; stop at the park connection rather than admitting parcels farther along the road."
+  },
+  {
+    "circuit_id": "C33742",
+    "street_name": "N Newton St",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      33742,
+      61240
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 66267,
+        "from": 1.0,
+        "to": 0.5125917878146447
+      },
+      {
+        "road_id": 33742,
+        "from": 0.1389894520467294,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 23395,
+    "park_access": {
+      "road_id": 66267,
+      "fraction": 0.5125917878146447
+    },
+    "start": {
+      "road_id": 33742,
+      "fraction": 0.1389894520467294
+    },
+    "crossing_exposure": 4,
+    "review_note": "Both sides of the complete Newton block plus the short southern park connection. Keep the broad eastern parcels whole and nonresidential context separate; no internal development tour is added."
+  },
+  {
+    "circuit_id": "C33792",
+    "street_name": "N Green Ct",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      33792
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 33792,
+        "from": 0.1593924334088111,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 33462,
+    "park_access": {
+      "road_id": 33792,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 33792,
+      "fraction": 0.1593924334088111
+    },
+    "crossing_exposure": 1,
+    "review_note": "Complete dead-end frontage, with the large nonresidential frontage retained only as context. The east-side gap is occupied by that context parcel; the ditch open-space visit is at the end."
+  },
+  {
+    "circuit_id": "C33982",
+    "street_name": "N Stuart Pl",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      33982,
+      68226
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 23275,
+    "park_access": {
+      "road_id": 68226,
+      "fraction": 0.9340042593942519
+    },
+    "start": {
+      "road_id": 68226,
+      "fraction": 0.9340042593942519
+    },
+    "crossing_exposure": 2,
+    "review_note": "Full Stuart Place unit, including both long facing rows and the end bend. Forty parcels are retained because they form a continuous street, not split to meet a parcel cap; Sunset Park runs alongside."
+  },
+  {
+    "circuit_id": "C34290",
+    "street_name": "W 73rd Ave",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      34290
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 34290,
+        "from": 0.7563633718000835,
+        "to": 0.790580724270653
+      }
+    ],
+    "park_parcel_id": 37418,
+    "park_access": {
+      "road_id": 34290,
+      "fraction": 0.790580724270653
+    },
+    "start": {
+      "road_id": 34290,
+      "fraction": 0.7563633718000835
+    },
+    "crossing_exposure": 2,
+    "review_note": "Compact complete block with four attached unit parcels on each side. Unlike the rejected perpendicular-row proposals, these two rows directly form the street unit; the common tract is reached at the western end."
+  },
+  {
+    "circuit_id": "C34738",
+    "street_name": "W 93rd Ave",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      34738,
+      35651
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 34738,
+        "from": 0.9213983472542008,
+        "to": 0.9667740534828736
+      }
+    ],
+    "park_parcel_id": 22996,
+    "park_access": {
+      "road_id": 34738,
+      "fraction": 0.9667740534828736
+    },
+    "start": {
+      "road_id": 34738,
+      "fraction": 0.9213983472542008
+    },
+    "crossing_exposure": 2,
+    "review_note": "Follow the full physical L-shaped block through its street-name change, retaining both rows around the bend. Pair is at the western start. This repairs the earlier partial 93rd Avenue unit."
+  },
+  {
+    "circuit_id": "C34774",
+    "street_name": "N Winona Ct",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      34774
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 34227,
+    "park_access": {
+      "road_id": 34774,
+      "fraction": 0.5381397598765263
+    },
+    "start": {
+      "road_id": 34774,
+      "fraction": 0.5381397598765263
+    },
+    "crossing_exposure": 2,
+    "review_note": "Small complete Winona connection between public junctions, with both rows and the central common-space slot. The western court is outside this unit."
+  },
+  {
+    "circuit_id": "C34827",
+    "street_name": "W 103rd Cir",
+    "intended_category": "below_prediction",
+    "core_road_ids": [
+      34827
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 34827,
+        "from": 0.0965187511292028,
+        "to": 0.031915186535291164
+      }
+    ],
+    "park_parcel_id": 12690,
+    "park_access": {
+      "road_id": 34827,
+      "fraction": 0.03191518653576008
+    },
+    "start": {
+      "road_id": 34827,
+      "fraction": 0.0965187511292028
+    },
+    "crossing_exposure": 1,
+    "review_note": "Entire curved cul-de-sac, including the entrance row and fan around the bulb. Common tract touches the bulb; complete the perimeter and return on the opposite side."
+  },
+  {
+    "circuit_id": "C34859",
+    "street_name": "N Lamar St",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      34859
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 34859,
+        "from": 0.6988265542826219,
+        "to": 1.0
+      }
+    ],
+    "park_parcel_id": 32802,
+    "park_access": {
+      "road_id": 67366,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 34859,
+      "fraction": 0.6988265542824171
+    },
+    "crossing_exposure": 1,
+    "review_note": "Complete short Lamar dead-end with two facing rows and the tract at its end. No additional neighborhood leg is needed."
+  },
+  {
+    "circuit_id": "C34884",
+    "street_name": "N Yates Dr",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      34884,
+      68311,
+      68348
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 19668,
+    "park_access": {
+      "road_id": 34884,
+      "fraction": 0.943354458443157
+    },
+    "start": {
+      "road_id": 34884,
+      "fraction": 0.943354458443157
+    },
+    "crossing_exposure": 2,
+    "review_note": "Complete long Yates curve, including both facing rows through former source breaks. The common tract follows its inner side; retain the whole unit as a longer backup."
+  },
+  {
+    "circuit_id": "C34975",
+    "street_name": "N King Ct",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      34975
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 34975,
+        "from": 0.33333333333958676,
+        "to": 0.23698343178728812
+      }
+    ],
+    "park_parcel_id": 10335,
+    "park_access": {
+      "road_id": 34975,
+      "fraction": 0.23698343178955508
+    },
+    "start": {
+      "road_id": 34975,
+      "fraction": 0.33333333333840265
+    },
+    "crossing_exposure": 1,
+    "review_note": "Entire King Court bulb and entrance parcels. Keep the user-favored unit; visit numbers now follow the fan consecutively, with the common tract at the entrance side."
+  },
+  {
+    "circuit_id": "C34988",
+    "street_name": "W 110th Pl",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      34988
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 34988,
+        "from": 0.3333333333243524,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 23609,
+    "park_access": {
+      "road_id": 67384,
+      "fraction": 1.0
+    },
+    "start": {
+      "road_id": 34988,
+      "fraction": 0.3333333333244652
+    },
+    "crossing_exposure": 1,
+    "review_note": "Whole five-parcel 110th Place cul-de-sac. The greenbelt slot between terminal parcels supplies the paired visit without a second street."
+  },
+  {
+    "circuit_id": "C34992",
+    "street_name": "W 109th Cir",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      34992
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 34992,
+        "from": 0.18089373642011186,
+        "to": 0.04599947556443844
+      }
+    ],
+    "park_parcel_id": 33179,
+    "park_access": {
+      "road_id": 34992,
+      "fraction": 0.04599947556687638
+    },
+    "start": {
+      "road_id": 34992,
+      "fraction": 0.180893736419337
+    },
+    "crossing_exposure": 1,
+    "review_note": "Entire curved 109th Circle cul-de-sac. Both rows and terminal fan are complete, with the greenbelt connection at the entrance."
+  },
+  {
+    "circuit_id": "C35156",
+    "street_name": "N Perry Way",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      35156,
+      67850
+    ],
+    "park_road_legs": [],
+    "park_parcel_id": 23908,
+    "park_access": {
+      "road_id": 67850,
+      "fraction": 0.12266981853860574
+    },
+    "start": {
+      "road_id": 67850,
+      "fraction": 0.12266981853931269
+    },
+    "crossing_exposure": 2,
+    "review_note": "Four immediate facing/corner parcels constitute the complete Perry connector. Greenbelt crosses its middle; retain as a small mixed backup rather than expanding to adjoining courts."
+  },
+  {
+    "circuit_id": "C35167",
+    "street_name": "W 100th Dr",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      35167
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 35167,
+        "from": 0.3308616915870601,
+        "to": 0.20706242140914907
+      }
+    ],
+    "park_parcel_id": 18913,
+    "park_access": {
+      "road_id": 35167,
+      "fraction": 0.2070624214104698
+    },
+    "start": {
+      "road_id": 35167,
+      "fraction": 0.3308616915877003
+    },
+    "crossing_exposure": 2,
+    "review_note": "Short 100th Drive connector with three parcels on one side and the opposite corner. Common space adjoins the latter; return on the same unit."
+  },
+  {
+    "circuit_id": "C35180",
+    "street_name": "N Grove Ct",
+    "intended_category": "close_to_prediction",
+    "core_road_ids": [
+      35180
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 35180,
+        "from": 0.7011024967311623,
+        "to": 0.8046273592249356
+      }
+    ],
+    "park_parcel_id": 32919,
+    "park_access": {
+      "road_id": 35180,
+      "fraction": 0.8046273592235546
+    },
+    "start": {
+      "road_id": 35180,
+      "fraction": 0.7011024967291081
+    },
+    "crossing_exposure": 1,
+    "review_note": "Entire Grove Court bulb and short stem. All nine parcels form one compact perimeter; common space is beside the entrance."
+  },
+  {
+    "circuit_id": "C35442",
+    "street_name": "W 96th Cir",
+    "intended_category": "above_prediction",
+    "core_road_ids": [
+      35442
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 35442,
+        "from": 0.07369861308248424,
+        "to": 0.0
+      }
+    ],
+    "park_parcel_id": 4110,
+    "park_access": {
+      "road_id": 35442,
+      "fraction": 0.0
+    },
+    "start": {
+      "road_id": 35442,
+      "fraction": 0.07369861308248424
+    },
+    "crossing_exposure": 4,
+    "review_note": "Complete L-shaped street frontage, with the bend joining the two runs. The unselected interior development is behind a separate access arrangement; the paired tract is reached across the northern end street."
+  },
+  {
+    "circuit_id": "C35681",
+    "street_name": "N Bryant St",
+    "intended_category": "mixed",
+    "core_road_ids": [
+      35681
+    ],
+    "park_road_legs": [
+      {
+        "road_id": 35681,
+        "from": 0.9187267272433558,
+        "to": 1.0
+      }
+    ],
+    "park_parcel_id": 29902,
+    "park_access": {
+      "road_id": 67142,
+      "fraction": 1.0
+    },
+    "start": {
+      "road_id": 35681,
+      "fraction": 0.9187267272433558
+    },
+    "crossing_exposure": 4,
+    "review_note": "Complete Bryant block, both continuous rows and end corners. Terrace Park is across the southern end street; the return follows the opposite row."
+  }
+]

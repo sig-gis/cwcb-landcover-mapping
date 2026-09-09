@@ -1,0 +1,14 @@
+{
+  "parcels": {
+    "path": "prior analysis/add_par_all/Parcels_CoW_2021.gpkg",
+    "sha256": "ebbfb190d9804d37b0328f200bfb10655ca2049da9b9f8ea1d6dab2058e11df4"
+  },
+  "model": {
+    "path": "outputs/seasonal_2021_size_binned/parcel_predictions.csv",
+    "sha256": "ff725fe51f3ac6490d7c33816ce4a0552c55022158cc6ba140b32f05002aaceb"
+  },
+  "roads": {
+    "path": "outputs/field_review_evidence/routable_streets.geojson",
+    "sha256": "46523c83e93703f1f1f3e8a4828067fac876df6b4cdd6a2f0903dc2198b2ee76"
+  }
+}
