@@ -34,6 +34,7 @@ $Region = Require-Env "GCP_REGION"
 $InputTifUri = Require-Env "INPUT_TIF_URI"
 $OutputBucket = Require-Env "OUTPUT_BUCKET"
 $OutputFolder = Require-Env "OUTPUT_FOLDER"
+$Sam3WeightsGcsUri = if ($env:SAM3_WEIGHTS_GCS_URI) { $env:SAM3_WEIGHTS_GCS_URI.TrimEnd("/") } else { "" }
 $ApiServiceName = if ($env:API_SERVICE_NAME) { $env:API_SERVICE_NAME } else { "cwcb-landcover-api" }
 $WorkerJobName = if ($env:WORKER_JOB_NAME) { $env:WORKER_JOB_NAME } else { "cwcb-landcover-worker" }
 $ArtifactRepository = if ($env:ARTIFACT_REPOSITORY) { $env:ARTIFACT_REPOSITORY } else { "cwcb-landcover" }
@@ -44,18 +45,32 @@ $WorkerTimeout = if ($env:WORKER_TIMEOUT) { $env:WORKER_TIMEOUT } else { "3600s"
 $RepoRoot = Split-Path -Parent $Root
 $VendorAutomageRoot = Join-Path $RepoRoot "vendor\automage"
 
-function Invoke-Gcloud($Args) {
-    & gcloud --project=$Project --quiet @Args
-    if ($LASTEXITCODE -ne 0) { throw "gcloud failed: $Args" }
+function Invoke-Gcloud {
+    param(
+        [Parameter(ValueFromRemainingArguments=$true)]
+        [object[]]$Arguments
+    )
+
+    $flat = @()
+    foreach ($arg in $Arguments) {
+        if ($arg -is [System.Array]) {
+            $flat += $arg
+        } else {
+            $flat += $arg
+        }
+    }
+
+    & gcloud --project=$Project --quiet @flat
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "gcloud failed: $($flat -join ' ')"
+    }
 }
 
-function Test-Lfs {
-    $script = "import json, sys`nfrom pathlib import Path`nmodel = Path(sys.argv[1]) / 'automage/models/sam3'`nindex = json.loads((model / 'model.safetensors.index.json').read_text())`nfor name in set(index['weight_map'].values()):`n    path = model / name`n    if not path.is_file() or path.stat().st_size < 1024:`n        raise SystemExit('Bundled weights missing. Run git lfs pull in automage before deploying.')`n"
-    $tmp = New-TemporaryFile
-    Set-Content -Path $tmp -Value $script
-    python $tmp $VendorAutomageRoot
-    Remove-Item $tmp -Force
-    if ($LASTEXITCODE -ne 0) { throw "LFS check failed" }
+function Test-ModelWeights {
+    if ([string]::IsNullOrWhiteSpace($Sam3WeightsGcsUri)) { throw "Set SAM3_WEIGHTS_GCS_URI in .env" }
+    Invoke-Gcloud @("storage", "objects", "describe", "$Sam3WeightsGcsUri/model-00001-of-00002.safetensors")
+    Invoke-Gcloud @("storage", "objects", "describe", "$Sam3WeightsGcsUri/model-00002-of-00002.safetensors")
 }
 
 function New-ServiceBuildContext {
@@ -77,17 +92,45 @@ function New-WorkerBuildContext {
 }
 
 function Ensure-Repo {
-    Invoke-Gcloud @("services", "enable", "run.googleapis.com", "artifactregistry.googleapis.com", "cloudbuild.googleapis.com", "storage.googleapis.com", "iam.googleapis.com")
-    & gcloud --project=$Project --quiet artifacts repositories describe $ArtifactRepository --location=$Region *> $null
+    Invoke-Gcloud @(
+        "services", "enable",
+        "run.googleapis.com",
+        "artifactregistry.googleapis.com",
+        "cloudbuild.googleapis.com",
+        "storage.googleapis.com",
+        "iam.googleapis.com"
+    )
+
+    $found = & gcloud --project=$Project --quiet artifacts repositories list `
+        --location=$Region `
+        --filter="name~/$ArtifactRepository$" `
+        --format="value(name)"
+
     if ($LASTEXITCODE -ne 0) {
-        Invoke-Gcloud @("artifacts", "repositories", "create", $ArtifactRepository, "--location=$Region", "--repository-format=docker")
+        throw "gcloud failed: artifacts repositories list --location=$Region"
+    }
+
+    if ([string]::IsNullOrWhiteSpace($found)) {
+        Invoke-Gcloud @(
+            "artifacts", "repositories", "create", $ArtifactRepository,
+            "--location=$Region",
+            "--repository-format=docker"
+        )
     }
 }
 
 function Build-Image($Kind, $Image) {
-    if ($Kind -eq "worker") { $context = New-WorkerBuildContext } else { $context = New-ServiceBuildContext }
+    if ($Kind -eq "worker") {
+        $context = New-WorkerBuildContext
+        $substitutions = "_IMAGE=$Image,_SAM3_WEIGHTS_GCS_URI=$Sam3WeightsGcsUri"
+    } else {
+        $context = New-ServiceBuildContext
+        $substitutions = "_IMAGE=$Image"
+    }
     try {
-        Invoke-Gcloud @("builds", "submit", $context, "--region=$Region", "--config=$Root\cloudbuild.$Kind.yaml", "--substitutions=_IMAGE=$Image")
+        $buildArgs = @("builds", "submit", $context, "--region=$Region", "--config=$Root\cloudbuild.$Kind.yaml", "--substitutions=$substitutions")
+        if ($env:BUILD_SERVICE_ACCOUNT) { $buildArgs += "--service-account=$env:BUILD_SERVICE_ACCOUNT" }
+        Invoke-Gcloud $buildArgs
     } finally {
         Remove-Item -Recurse -Force $context -ErrorAction SilentlyContinue
     }
@@ -95,15 +138,15 @@ function Build-Image($Kind, $Image) {
 
 function Build-Service {
     Ensure-Repo
-    $image = "$Region-docker.pkg.dev/$Project/$ArtifactRepository/api:$(Get-Date -AsUTC -Format yyyyMMdd-HHmmss)"
+    $image = "$Region-docker.pkg.dev/$Project/$ArtifactRepository/api:$((Get-Date).ToUniversalTime().ToString("yyyyMMdd-HHmmss"))"
     Build-Image "service" $image
     Write-Output $image
 }
 
 function Build-Worker {
-    Test-Lfs
+    Test-ModelWeights
     Ensure-Repo
-    $image = "$Region-docker.pkg.dev/$Project/$ArtifactRepository/worker:$(Get-Date -AsUTC -Format yyyyMMdd-HHmmss)"
+    $image = "$Region-docker.pkg.dev/$Project/$ArtifactRepository/worker:$((Get-Date).ToUniversalTime().ToString("yyyyMMdd-HHmmss"))"
     Build-Image "worker" $image
     Write-Output $image
 }
@@ -113,7 +156,6 @@ switch ($Command) {
         Invoke-Gcloud @("auth", "list", "--filter=status:ACTIVE", "--format=value(account)")
         Invoke-Gcloud @("projects", "describe", $Project, "--format=value(projectId,lifecycleState)")
         if (-not (Test-Path $VendorAutomageRoot)) { throw "Missing vendored AutoMage: $VendorAutomageRoot" }
-        Test-Lfs
         Write-Host "Ready: project=$Project region=$Region input=$InputTifUri output=gs://$OutputBucket/$OutputFolder"
     }
     "build-service" { Build-Service }

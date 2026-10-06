@@ -62,24 +62,16 @@ copy_worker_context() {
   echo "$scratch"
 }
 
-check_lfs() {
-  python3 - "$vendor_automage_root" <<'PY'
-import json, sys
-from pathlib import Path
-model = Path(sys.argv[1]) / 'automage/models/sam3'
-index = json.loads((model / 'model.safetensors.index.json').read_text())
-for name in set(index['weight_map'].values()):
-    path = model / name
-    if not path.is_file() or path.stat().st_size < 1024:
-        raise SystemExit('Bundled weights missing. Run git lfs pull in automage before deploying.')
-PY
+check_model_weights() {
+  : "${SAM3_WEIGHTS_GCS_URI:?Set SAM3_WEIGHTS_GCS_URI in .env}"
+  "${gc[@]}" storage objects describe "${SAM3_WEIGHTS_GCS_URI%/}/model-00001-of-00002.safetensors" >/dev/null
+  "${gc[@]}" storage objects describe "${SAM3_WEIGHTS_GCS_URI%/}/model-00002-of-00002.safetensors" >/dev/null
 }
 
 check() {
   "${gc[@]}" auth list --filter=status:ACTIVE --format='value(account)'
   "${gc[@]}" projects describe "$GCP_PROJECT" --format='value(projectId,lifecycleState)'
   [[ -d "$vendor_automage_root" ]] || { echo "Missing vendored AutoMage: $vendor_automage_root" >&2; return 1; }
-  check_lfs
   printf 'Ready: project=%s region=%s input=%s output=gs://%s/%s\n' "$GCP_PROJECT" "$GCP_REGION" "$INPUT_TIF_URI" "$OUTPUT_BUCKET" "$OUTPUT_FOLDER"
 }
 
@@ -94,11 +86,16 @@ build_image() {
   local kind=$1 image=$2 context
   if [[ "$kind" == worker ]]; then
     context=$(copy_worker_context)
+    substitutions="_IMAGE=$image,_SAM3_WEIGHTS_GCS_URI=${SAM3_WEIGHTS_GCS_URI%/}"
   else
     context=$(copy_service_context)
+    substitutions="_IMAGE=$image"
   fi
+  build_flags=()
+  if [[ -n "${BUILD_SERVICE_ACCOUNT:-}" ]]; then build_flags+=(--service-account="$BUILD_SERVICE_ACCOUNT"); fi
   "${gc[@]}" builds submit "$context" --region="$GCP_REGION" \
-    --config="$root/cloudbuild.${kind}.yaml" --substitutions="_IMAGE=$image"
+    --config="$root/cloudbuild.${kind}.yaml" --substitutions="$substitutions" \
+    "${build_flags[@]}"
 }
 
 build_service() {
@@ -109,7 +106,7 @@ build_service() {
 }
 
 build_worker() {
-  check_lfs
+  check_model_weights
   ensure_repo
   image="${GCP_REGION}-docker.pkg.dev/${GCP_PROJECT}/${ARTIFACT_REPOSITORY}/worker:$(date -u +%Y%m%d-%H%M%S)"
   build_image worker "$image"
