@@ -28,29 +28,6 @@ The API always uses `INPUT_TIF_URI` for now. Users provide only `output_prefix` 
 gs://$OUTPUT_BUCKET/$OUTPUT_FOLDER/$output_prefix/
 ```
 
-## SAM3 model weights
-
-The vendored AutoMage code is kept in this repository under `vendor/automage`, but the large SAM3 `.safetensors` files are intentionally **not** committed and do not use Git LFS. Worker image builds download the model weights from GCS and bake them into the image.
-
-Expected GCS layout:
-
-```text
-$SAM3_WEIGHTS_GCS_URI/model-00001-of-00002.safetensors
-$SAM3_WEIGHTS_GCS_URI/model-00002-of-00002.safetensors
-```
-
-If you have local copies of the weights under `vendor/automage/automage/models/sam3`, upload them once:
-
-```powershell
-.\upload-model-weights.ps1 -DestinationUri gs://your-model-bucket/automage/sam3
-```
-
-Then set the same URI in `.env`:
-
-```bash
-SAM3_WEIGHTS_GCS_URI=gs://your-model-bucket/automage/sam3
-```
-
 ## API
 
 ### Health
@@ -143,5 +120,3 @@ This deployment uses two configurable service accounts:
 
 - `BUILD_SERVICE_ACCOUNT`: used by `gcloud builds submit` when building/pushing API and worker images.
 - `RUNTIME_SERVICE_ACCOUNT`: attached to both the Cloud Run API service and Cloud Run worker job.
-
-The build service account needs read access to `SAM3_WEIGHTS_GCS_URI` and write access to the Artifact Registry repository. The runtime service account needs read access to `INPUT_TIF_URI`, read/write access to `OUTPUT_BUCKET/OUTPUT_FOLDER`, and permission to execute the worker job with argument overrides.
